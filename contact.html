@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Pillars - Creative Design Agency</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor"></div>
+  
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="index.html" class="logo">
+          <span>100</span>PILLARS
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="work.html">Our Work</a></li>
+        <li class="dropdown">
+          <a href="#">Packages ▼</a>
+          <div class="dropdown-content">
+            <a href="packages.html">Packages</a>
+            <a href="#construction">Construction</a>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="dropdown-content">
+          <a href="packages.html">Packages</a>
+          <a href="#construction">Construction</a>
+        </div>
+        <li><a href="#get-quote" class="get-quote">Get Quote</a></li>
+       </ul>
+        </nav>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- floating whats app -->
+  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
+      <img src="https://techfocus24.com/wp-content/uploads/2021/01/whatsapp-button.png" alt="WhatsApp" style="width: 200px; height: 70px;" >
+    </a>
+  </div>
+
+  <!-- floating whats app -->
+   
+<!--hero section-->
+  <main>
+    <section class="reach-out">
+      <div class="wrapper">
+        <h2>Contact Us</h2>
+        <div class="estimate-box">
+          <h3>GET A FREE ESTIMATE</h3>
+          <form>
+            <div class="input-block">
+              <label for="user-name">Name<span>*</span></label>
+              <input type="text" id="user-name" required>
+            </div>
+            <div class="input-block">
+              <label for="phone">Mobile<span>*</span></label>
+              <input type="tel" id="phone" required>
+            </div>
+            <div class="input-block">
+              <label for="user-email">Email<span>*</span></label>
+              <input type="email" id="user-email" required>
+            </div>
+            <div class="input-block">
+              <label for="location">Plot Location</label>
+              <select id="location">
+                <option value="">-None-</option>
+                <option value="location1">Mumbai</option>
+                <option value="location2">Delhi</option>
+              </select>
+            </div>
+            <div class="input-block">
+              <label for="needs">Construction Requirements</label>
+              <textarea id="needs" rows="4"></textarea>
+            </div>
+            <div class="form-controls">
+              <button type="reset" class="action-btn clear">RESET</button>
+              <button type="submit" class="action-btn quote">GET A FREE QUOTE NOW</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--End hero section-->
+
+
+
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="footer-links">
+        <a href="#support">Support</a>
+        <a href="#terms">Terms & Services</a>
+        <a href="#privacy">Privacy & Policy</a>
+      </div>
+      <div class="footer-sections">
+        <div class="footer-column">
+          <h3>Constructions</h3>
+          <ul>
+            <li><a href="#residential">Residential Construction</a></li>
+            <li><a href="#commercial">Commercial Construction</a></li>
+            <li><a href="#home">Home Construction</a></li>
+            <li><a href="#farmhouse">Farm House Construction</a></li>
+            <li><a href="#addfloor">Add New Floor</a></li>
+            <li><a href="#duplex">Duplex Home Construction</a></li>
+            <li><a href="#independent">Independent House Construction</a></li>
+            <li><a href="#villa">Villa Construction</a></li>
+            <li><a href="#luxury">Luxury Home Construction</a></li>
+            <li><a href="#cost">Cost of New Home Construction</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Interiors</h3>
+          <ul>
+            <li><a href="#res-interior">Residential Interior Design</a></li>
+            <li><a href="#living">Living Room Interior Design</a></li>
+            <li><a href="#kitchen">Kitchen Interior Design</a></li>
+            <li><a href="#bedroom">Bedroom Interior Design</a></li>
+            <li><a href="#bathroom">Bathroom Interior Design</a></li>
+            <li><a href="#office">Office Interior Design</a></li>
+            <li><a href="#commercial-interior">Commercial Interior Design</a></li>
+            <li><a href="#apartment">Apartment Interior Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Calculator</h3>
+          <ul>
+            <li><a href="#res-cost">Residential Cost Estimator</a></li>
+            <li><a href="#comm-cost">Commercial Cost Estimator</a></li>
+            <li><a href="#interior-cost">Interior Cost Estimator</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Packages</h3>
+          <ul>
+            <li><a href="#luxury">Luxury</a></li>
+            <li><a href="#commercial">Commercial</a></li>
+            <li><a href="#interior">Interior</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple script for the mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav').classList.toggle('nav--active');
+      this.classList.toggle('menu-toggle--active');
+    });
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+    
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;");
+    });
+    
+    document.addEventListener('click', () => {
+      cursor.classList.add("cursor--expand");
+      setTimeout(() => {
+        cursor.classList.remove("cursor--expand");
+      }, 500);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Pillars - Creative Design Agency</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor"></div>
+  
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="index.html" class="logo">
+          <span>100</span>PILLARS
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="work.html">Our Work</a></li>
+        <li class="dropdown">
+          <a href="#">Packages ▼</a>
+          <div class="dropdown-content">
+            <a href="packages.html">Packages</a>
+            <a href="#construction">Construction</a>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="dropdown-content">
+          <a href="packages.html">Packages</a>
+          <a href="#construction">Construction</a>
+        </div>
+        <li><a href="#get-quote" class="get-quote">Get Quote</a></li>
+       </ul>
+        </nav>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+<body>
+    <section class="project-details">
+        <div class="container">
+          <h2>Project Details</h2>
+          <div class="details-content">
+            <img id="project-image" src="https://via.placeholder.com/600x400?text=Project+Image" alt="Project Image">
+            <h3 id="project-title">Project Name</h3>
+            <p id="project-location"><strong>Location:</strong> [Location]</p>
+            <p id="project-description">[Project Description]</p>
+            <ul id="project-features">
+              <li>[Feature 1]</li>
+              <li>[Feature 2]</li>
+              <li>[Feature 3]</li>
+            </ul>
+            <p id="project-timeline"><strong>Timeline:</strong> [Timeline]</p>
+            <a href="index.html#recent-works" class="back-btn">Back to Recent Works</a>
+          </div>
+        </div>
+      </section>
+      <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('project');
+        const projects = {
+          1: {
+            title: "Shiv Residency",
+            image: "https://via.placeholder.com/600x400?text=Shiv+Residency",
+            location: "Shiv Residency, Bangalore",
+            description: "A modern residential complex with state-of-the-art amenities, designed for luxury living.",
+            features: ["3 BHK Apartments", "Swimming Pool", "Landscaped Gardens"],
+            timeline: "Completed in 2023"
+          },
+          2: {
+            title: "Palm Grove",
+            image: "https://housystan.com/_next/image?url=https%3A%2F%2Foss-brigade.s3.ap-southeast-1.amazonaws.com%2Fnpd%2FSita-Aditya-Serene-County.webp&w=1920&q=75",
+            location: "Palm Grove, Bangalore",
+            description: "A serene residential project surrounded by greenery, offering a peaceful living experience.",
+            features: ["2 BHK Villas", "Clubhouse", "Jogging Track"],
+            timeline: "Completed in 2022"
+          },
+          3: {
+            title: "Redwood Estates",
+            image: "https://img.squareyards.com/secondaryPortal/IN_638719549195583066-0801250541594159.jpg",
+            location: "Redwood Estates, Bangalore",
+            description: "A premium residential estate with modern architecture and eco-friendly design.",
+            features: ["4 BHK Duplexes", "Gymnasium", "Solar Panels"],
+            timeline: "Completed in 2024"
+          },
+          4: {
+            title: "Shiv Residency",
+            image: "https://is1-3.housingcdn.com/4f2250e8/4534c19d0807d406b5a86ff9b5e3e12c/v0/fs/shiv_residency-tarsali-vadodara-shiv_developers.jpeg",
+            location: "Shiv Residency, Bangalore",
+            description: "Another phase of the Shiv Residency project, focusing on spacious living and modern design.",
+            features: ["3 BHK Apartments", "Rooftop Terrace", "Parking Facility"],
+            timeline: "Completed in 2023"
+          },
+          5: {
+            title: "Pruthvi Residency",
+            image: "https://www.svadhabuilders.in/wp-content/uploads/2020/03/12.jpg",
+            location: "Pruthvi Residency, Bangalore",
+            description: "A residential project with a focus on community living and modern amenities.",
+            features: ["2 BHK Apartments", "Community Hall", "Play Area"],
+            timeline: "Completed in 2021"
+          },
+          6: {
+            title: "Skyline Towers",
+            image: "https://www.vikasjoshi.in/wp-content/uploads/2022/05/Luxuryresidentialprojectsinnoida.jpg",
+            location: "Skyline Towers, Bangalore",
+            description: "A high-rise residential project offering panoramic views and luxury living.",
+            features: ["3 BHK Penthouses", "Infinity Pool", "Concierge Services"],
+            timeline: "Completed in 2024"
+          },
+          7: {
+            title: "Maple Heights",
+            image: "https://s3.ap-south-1.amazonaws.com/investormart/uploads/images/202409/image_750x_66f15a9b0b56d.jpg",
+            location: "Maple Heights, Bangalore",
+            description: "A modern residential project with a focus on sustainability and comfort.",
+            features: ["3 BHK Apartments", "Rainwater Harvesting", "Green Spaces"],
+            timeline: "Completed in 2022"
+          },
+          8: {
+            title: "Pruthvi Residency",
+            image: "https://is1-2.housingcdn.com/4f2250e8/7a49675c43758d839e754a84879a6b8b/v0/fs/fortune_kumkum_heights-kondapur_hyderabad-hyderabad-fortune_group_builders_%26_developers.jpg",
+            location: "Pruthvi Residency, Bangalore",
+            description: "An extension of Pruthvi Residency, offering modern living spaces with enhanced amenities.",
+            features: ["2 BHK Apartments", "Fitness Center", "Security Systems"],
+            timeline: "Completed in 2023"
+          }
+        };
+    
+        if (projectId && projects[projectId]) {
+          const project = projects[projectId];
+          document.getElementById('project-image').src = project.image;
+          document.getElementById('project-title').textContent = project.title;
+          document.getElementById('project-location').innerHTML = `<strong>Location:</strong> ${project.location}`;
+          document.getElementById('project-description').textContent = project.description;
+          const featuresList = document.getElementById('project-features');
+          featuresList.innerHTML = '';
+          project.features.forEach(feature => {
+            const li = document.createElement('li');
+            li.textContent = feature;
+            featuresList.appendChild(li);
+          });
+          document.getElementById('project-timeline').innerHTML = `<strong>Timeline:</strong> ${project.timeline}`;
+        }
+      </script>
+
+  <!-- footer-->
+
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="footer-links">
+        <a href="#support">Support</a>
+        <a href="#terms">Terms & Services</a>
+        <a href="#privacy">Privacy & Policy</a>
+      </div>
+      <div class="footer-sections">
+        <div class="footer-column">
+          <h3>Constructions</h3>
+          <ul>
+            <li><a href="#residential">Residential Construction</a></li>
+            <li><a href="#commercial">Commercial Construction</a></li>
+            <li><a href="#home">Home Construction</a></li>
+            <li><a href="#farmhouse">Farm House Construction</a></li>
+            <li><a href="#addfloor">Add New Floor</a></li>
+            <li><a href="#duplex">Duplex Home Construction</a></li>
+            <li><a href="#independent">Independent House Construction</a></li>
+            <li><a href="#villa">Villa Construction</a></li>
+            <li><a href="#luxury">Luxury Home Construction</a></li>
+            <li><a href="#cost">Cost of New Home Construction</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Interiors</h3>
+          <ul>
+            <li><a href="#res-interior">Residential Interior Design</a></li>
+            <li><a href="#living">Living Room Interior Design</a></li>
+            <li><a href="#kitchen">Kitchen Interior Design</a></li>
+            <li><a href="#bedroom">Bedroom Interior Design</a></li>
+            <li><a href="#bathroom">Bathroom Interior Design</a></li>
+            <li><a href="#office">Office Interior Design</a></li>
+            <li><a href="#commercial-interior">Commercial Interior Design</a></li>
+            <li><a href="#apartment">Apartment Interior Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Calculator</h3>
+          <ul>
+            <li><a href="#res-cost">Residential Cost Estimator</a></li>
+            <li><a href="#comm-cost">Commercial Cost Estimator</a></li>
+            <li><a href="#interior-cost">Interior Cost Estimator</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Packages</h3>
+          <ul>
+            <li><a href="#luxury">Luxury</a></li>
+            <li><a href="#commercial">Commercial</a></li>
+            <li><a href="#interior">Interior</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Pillars - Creative Design Agency</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor"></div>
+  
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="index.html" class="logo">
+          <span>100</span>PILLARS
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="work.html">Our Work</a></li>
+        <li class="dropdown">
+          <a href="#">Packages ▼</a>
+          <div class="dropdown-content">
+            <a href="packages.html">Packages</a>
+            <a href="#construction">Construction</a>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="dropdown-content">
+          <a href="packages.html">Packages</a>
+          <a href="#construction">Construction</a>
+        </div>
+        <li><a href="#get-quote" class="get-quote">Get Quote</a></li>
+       </ul>
+        </nav>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+    <!-- floating whats app -->
+  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
+      <img src="https://techfocus24.com/wp-content/uploads/2021/01/whatsapp-button.png" alt="WhatsApp" style="width: 200px; height: 70px;" >
+    </a>
+  </div>
+
+  <!-- floating whats app -->
+
+  <main>
+ 
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Build Right. Live Smart.</h1>
+        <p>The Pros Behind Bengaluru's Best Homes</p>
+        <a href="#" class="button button-book">Book Plot Inspection</a>
+        <a href="#" class="button button-packages">Our Packages</a>
+      </div>
+    </section>
+
+
+
+    <!--Recent Works Section-->
+
+    <section class="recent-works" id="recent-works">
+      <div class="container">
+        <h2>Our Recent Works</h2>
+        <p class="subtitle">Experience the essence of thoughtful construction in Bangalore—our work speaks volumes about who we are and what we build.</p>
+        <div class="works-grid">
+          <div class="work-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://content.jdmagicbox.com/comp/bangalore/h5/080pxx80.xx80.200921210103.h8h5/catalogue/manish-residency-jp-nagar-6th-phase-bangalore-residential-buildings-31w5yednnt.jpg" alt="Project 1" data-location="Shiv Residency" data-details="project_details.html?project=1">
+                </div>
+                <div class="flip-card-back">
+                  <button class="details-btn" onclick="goToDetails('project_details.html?project=1')">More Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="location-overlay">Shiv Residency</div>
+          </div>
+          <div class="work-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://housystan.com/_next/image?url=https%3A%2F%2Foss-brigade.s3.ap-southeast-1.amazonaws.com%2Fnpd%2FSita-Aditya-Serene-County.webp&w=1920&q=75" alt="Project 2" data-location="Palm Grove" data-details="project_details.html?project=2">
+                </div>
+                <div class="flip-card-back">
+                  <button class="details-btn" onclick="goToDetails('project_details.html?project=2')">More Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="location-overlay">Palm Grove</div>
+          </div>
+          <div class="work-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://img.squareyards.com/secondaryPortal/IN_638719549195583066-0801250541594159.jpg" alt="Project 3" data-location="Redwood Estates" data-details="project_details.html?project=3">
+                </div>
+                <div class="flip-card-back">
+                  <button class="details-btn" onclick="goToDetails('project_details.html?project=3')">More Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="location-overlay">Redwood Estates</div>
+          </div>
+          <div class="work-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://is1-3.housingcdn.com/4f2250e8/4534c19d0807d406b5a86ff9b5e3e12c/v0/fs/shiv_residency-tarsali-vadodara-shiv_developers.jpeg" alt="Project 4" data-location="Shiv Residency" data-details="project_details.html?project=4">
+                </div>
+                <div class="flip-card-back">
+                  <button class="details-btn" onclick="goToDetails('project_details.html?project=4')">More Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="location-overlay">Shiv Residency</div>
+          </div>
+          <div class="work-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://www.svadhabuilders.in/wp-content/uploads/2020/03/12.jpg" alt="Project 5" data-location="Pruthvi Residency" data-details="project_details.html?project=5">
+                </div>
+                <div class="flip-card-back">
+                  <button class="details-btn" onclick="goToDetails('project_details.html?project=5')">More Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="location-overlay">Pruthvi Residency</div>
+          </div>
+          <div class="work-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://www.vikasjoshi.in/wp-content/uploads/2022/05/Luxuryresidentialprojectsinnoida.jpg" alt="Project 6" data-location="Skyline Towers" data-details="project_details.html?project=6">
+                </div>
+                <div class="flip-card-back">
+                  <button class="details-btn" onclick="goToDetails('project_details.html?project=6')">More Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="location-overlay">Skyline Towers</div>
+          </div>
+          <div class="work-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src=" https://s3.ap-south-1.amazonaws.com/investormart/uploads/images/202409/image_750x_66f15a9b0b56d.jpg" alt="Project 7" data-location="Maple Heights" data-details="project_details.html?project=7">
+                </div>
+                <div class="flip-card-back">
+                  <button class="details-btn" onclick="goToDetails('project_details.html?project=7')">More Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="location-overlay">Maple Heights</div>
+          </div>
+          <div class="work-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://is1-2.housingcdn.com/4f2250e8/7a49675c43758d839e754a84879a6b8b/v0/fs/fortune_kumkum_heights-kondapur_hyderabad-hyderabad-fortune_group_builders_%26_developers.jpg" alt="Project 8" data-location="Pruthvi Residency" data-details="project_details.html?project=8">
+                </div>
+                <div class="flip-card-back">
+                  <button class="details-btn" onclick="goToDetails('project_details.html?project=8')">More Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="location-overlay">Pruthvi Residency</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function goToDetails(url) {
+        window.location.href = url;
+      }
+  
+      document.querySelectorAll('.work-item img').forEach(img => {
+        img.addEventListener('click', (e) => {
+          const overlay = e.target.parentElement.parentElement.parentElement.nextElementSibling;
+          overlay.style.opacity = '1';
+          setTimeout(() => {
+            overlay.style.opacity = '0';
+          }, 2000);
+        });
+      });
+    </script>
+
+     <!--Recent Works Section-->
+
+      <!--how it work-->
+
+  <section class="how-it-works">
+    <div class="container">
+      <h2><span class="highlight">How it works</span></h2>
+      <p class="subtitle">Our steps are simple and easy to understand: Plan - Build - Track - Settle in.</p>
+      <div class="steps-container">
+        <div class="step" data-step="1">
+          <span class="step-number">1</span>
+          <p class="step-title">Raise a Request</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="2">
+          <span class="step-number">2</span>
+          <p class="step-title">Meet our Expert</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="3">
+          <span class="step-number">3</span>
+          <p class="step-title">Book with Us</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="4">
+          <span class="step-number">4</span>
+          <p class="step-title">Receive Designs</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="5">
+          <span class="step-number">5</span>
+          <p class="step-title">Track & Transact</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="6">
+          <span class="step-number">6</span>
+          <p class="step-title">Settle In</p>
+        </div>
+      </div>
+      <div class="details-container">
+        <div class="details active" data-step="1">
+          <img src="https://strapi-cdn.downtobid.com/Screenshot_2024_06_25_at_11_02_27_PM_min_84caa78a8c/Screenshot_2024_06_25_at_11_02_27_PM_min_84caa78a8c.png" alt="Raise a Request">
+          <p>Submit your project details and requirements to get started.</p>
+        </div>
+        <div class="details" data-step="2">
+          <img src="https://media.istockphoto.com/id/1189913170/photo/engineer-and-businessman-handshake-at-construction-site.jpg?s=612x612&w=0&k=20&c=LAGNJv533KQKPrb71GiavOCaTKVI5IfR_QioV_t88hM=" alt="Meet our Expert">
+          <p>Schedule a consultation with our expert team for personalized advice.</p>
+        </div>
+        <div class="details" data-step="3">
+          <img src="https://a-us.storyblok.com/f/1005140/480x322/41a86620e7/construction-contract.png" alt="Book with Us">
+          <p>Finalize your booking and confirm the project timeline.</p>
+        </div>
+        <div class="details" data-step="4">
+          <img src="https://bicjsc.com/upload/3site/files/TinTucNoiBo/ThietKeXayDungLagi/thiet-ke-xay-dung.jpg" alt="Receive Designs">
+          <p>Receive tailored design proposals for your approval.</p>
+        </div>
+        <div class="details" data-step="5">
+          <img src="https://www.sydle.com/blog/assets/post/dcr-67926c6ea210ee6f3de8b526/AdobeStock_637648103.webp" alt="Track & Transact">
+          <p>Track progress and handle transactions securely online.</p>
+        </div>
+        <div class="details" data-step="6">
+          <img src="https://builtrighthomesva.com/wp-content/uploads/2021/01/concept-of-housing-for-family-1024x683.jpg" alt="Settle In">
+          <p>Move into your completed, custom-built space.</p>
+        </div>
+  </section>
+  <script>
+    document.querySelectorAll('.step').forEach(step => {
+      step.addEventListener('click', () => {
+        const stepNumber = step.getAttribute('data-step');
+        document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+        step.classList.add('active');
+        document.querySelectorAll('.details').forEach(detail => {
+          detail.classList.remove('active');
+          if (detail.getAttribute('data-step') === stepNumber) {
+            detail.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+
+ <!--End how it work-->
+  
+    <!--Construction Services-->
+
+    <section class="services">
+      <div class="container">
+        <h2>Construction Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="image-wrapper">
+              <img src="https://i0.wp.com/theconstructor.org/wp-content/uploads/2014/10/Residential-building.jpg?fit=1158%2C690&ssl=1" alt="Residential">
+              <a href="#" class="btn btn-secondary" onclick="showDetails('residential')">Know More</a>
+            </div>
+            <h3>Residential</h3>
+            <p>Customize your home from Material, Interiors, Furnishing to Courtyards or Swimming pools! We cover everything to make the perfect</p>
+          </div>
+          <div class="service-card">
+            <div class="image-wrapper">
+              <img src="https://bimsmithstorage.blob.core.windows.net/news-content/2020723_b_office-building-designs-architectures-ideas_office-decoration.jpg" alt="Commercial">
+              <a href="#" class="btn btn-secondary" onclick="showDetails('commercial')">Know More</a>
+            </div>
+            <h3>Commercial</h3>
+            <p>Modify or redevelop an existing building material refurbished or unrestored, interiors repurposed, office exteriors redesigned. We at Build Nest will do them for you make truly more.</p>
+          </div>
+          <div class="service-card">
+            <div class="image-wrapper">
+              <img src="https://havitsteelstructure.com/wp-content/uploads/2023/09/Industrial-buildings.jpg" alt="Industrial">
+              <a href="#" class="btn btn-primary" onclick="showDetails('industrial')"> More detailed</a>
+            </div>
+            <h3>Industrial</h3>
+            <p>Be it material customization, structuring every section of your factory, or refurbishing the entire structure, we will make sure that you get what you pay for us, paying attention to the details is our specialty</p>
+          </div>
+        </div>
+        <div id="details-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails()">×</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-body"></div>
+            <a href="#" class="btn btn-secondary" id="modal-btn" onclick="showMoreDetails()">Learn More</a>
+            <div id="more-details" class="more-details hidden">
+              <p id="more-details-body"></p>
+              <a href="#" class="btn btn-secondary" onclick="closeDetails()">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function showDetails(type) {
+        const modal = document.getElementById('details-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalBody = document.getElementById('modal-body');
+        const modalBtn = document.getElementById('modal-btn');
+        const moreDetails = document.getElementById('more-details');
+        const moreDetailsBody = document.getElementById('more-details-body');
+  
+        let title = '', body = '', moreBody = '', btnText = '';
+        if (type === 'residential') {
+          title = 'Residential Services';
+          body = `
+            <p>Our residential services include comprehensive customization options to transform your living space. From high-quality materials and modern interiors to luxurious additions like courtyards and swimming pools, we ensure every detail is tailored to your needs.</p>
+            <p><strong>Features:</strong> Material Selection, Interior Design, Outdoor Enhancements, Full Project Management.</p>
+          `;
+          moreBody = `
+            <p>We also offer end-to-end support, including architectural planning, 3D modeling, and post-construction services. Whether you're building a new home or renovating an existing one, our team ensures a seamless experience with a focus on quality and sustainability.</p>
+            <p><strong>Additional Services:</strong> Energy-efficient Designs, Smart Home Integration, Landscape Design.</p>
+          `;
+          btnText = 'Learn More';
+        } else if (type === 'commercial') {
+          title = 'Commercial Services';
+          body = `
+            <p>We specialize in modifying and redeveloping commercial properties to meet your business needs. Whether it's refurbishing existing structures, repurposing interiors, or redesigning office exteriors, our team at Build Nest ensures a seamless process.</p>
+            <p><strong>Features:</strong> Refurbishment, Interior Repurposing, Exterior Redesign, Project Oversight.</p>
+          `;
+          moreBody = `
+            <p>Our commercial services also include space optimization, compliance with local regulations, and integration of modern amenities to enhance functionality. We cater to offices, retail spaces, and more, delivering projects that align with your business goals.</p>
+            <p><strong>Additional Services:</strong> Safety Compliance, Modular Design, Tenant Improvements.</p>
+          `;
+          btnText = 'Learn More';
+        } else if (type === 'industrial') {
+          title = 'Industrial Services';
+          body = `
+            <p>Our industrial services focus on customizing and structuring every section of your factory or facility. From material selection to complete refurbishment, we pay meticulous attention to detail.</p>
+            <p><strong>Features:</strong> Material Customization, Structural Design, Full Refurbishment, Quality Assurance.</p>
+          `;
+          moreBody = `
+            <p>We also provide specialized services like heavy-duty structural reinforcements, industrial-grade material sourcing, and adherence to safety standards. Our goal is to create a robust and efficient facility that supports your operational needs.</p>
+            <p><strong>Additional Services:</strong> Industrial Safety Audits, Equipment Installation, Facility Expansion.</p>
+          `;
+          btnText = 'More detailed';
+        }
+  
+        modalTitle.textContent = title;
+        modalBody.innerHTML = body;
+        moreDetailsBody.innerHTML = moreBody;
+        modalBtn.textContent = btnText;
+        moreDetails.classList.add('hidden');
+        modal.style.display = 'block';
+      }
+  
+      function showMoreDetails() {
+        const moreDetails = document.getElementById('more-details');
+        const modalBtn = document.getElementById('modal-btn');
+        moreDetails.classList.remove('hidden');
+        modalBtn.style.display = 'none';
+      }
+  
+      function closeDetails() {
+        document.getElementById('details-modal').style.display = 'none';
+      }
+  
+      window.onclick = function(event) {
+        const modal = document.getElementById('details-modal');
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      }
+    </script>
+
+    <!--End Construction Services-->
+  <!--EndWhy 100Pillars-->
+
+
+  <!--Why 100Pillars-->
+  <section class="why-us">
+    <div class="container">
+      <h2>Why 100Pillars?</h2>
+      <p class="subtitle">We ensure peace of mind, trust, and transparent construction.</p>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="https://img.freepik.com/premium-vector/online-shopping-payment-transaction-with-bank-card-hand-holding-shopping-bag-credit-card_251235-625.jpg" alt="Safe Money Transaction">
+              <h3>Safe Money Transaction</h3>
+              <p>No Advance. Contractor is paid only once the work is complete.</p>
+            </div>
+            <div class="card-back">
+              <h3>Secure Payments</h3>
+              <p>We prioritize your financial security with a payment system that ensures funds are released only after satisfactory completion of each milestone.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="https://www.turnitin.com/assets/images/resources/intro-images/exploring-the-gray-area-understanding-paraphrasing-as-a-potential-path-to-plagiarism-turnitin-blog-image.png" alt="Absolute Transparency">
+              <h3>Absolute Transparency</h3>
+              <p>Clear and Detailed Quotation. Online tracking of projects.</p>
+            </div>
+            <div class="card-back">
+              <h3>Full Visibility</h3>
+              <p>Stay informed with real-time updates and detailed breakdowns of costs, timelines, and progress, accessible anytime online.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="https://img.freepik.com/premium-vector/female-boss-give-direction-staff-using-theodolite-total-positioning-station-construction-site-road-boss-move-concept-colored-flat-graphic-vector-illustration-isolated_612079-1007.jpg?w=360" alt="Assured Quality Control">
+              <h3>Assured Quality Control</h3>
+              <p>310+ Quality (QASCON) Checks performed by team of experts.</p>
+            </div>
+            <div class="card-back">
+              <h3>Expert Oversight</h3>
+              <p>Our team conducts over 310 quality checks at every stage to ensure your project meets the highest standards of excellence.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwwWik35JiPZcCwa_6CB2WqU9LjuNyklWC3DrlIAH4mufAxwfo" alt="Zero Delays">
+              <h3>Zero Delays</h3>
+              <p>Zero tolerance to delays.</p>
+            </div>
+            <div class="card-back">
+              <h3>On-Time Delivery</h3>
+              <p>We maintain strict timelines to ensure your project is completed on schedule, with no delays or excuses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Why 100Pillars-->
+
+
+  <!--What Our Home Owners Say-->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Home Owners Say</h2>
+      <div class="testimonial-slider">
+        <button class="arrow left-arrow">&lt;</button>
+        <div class="testimonial-content">
+          <div class="testimonial-slide active">
+            <p class="quote">"The team at 100 Pillars are always the most conscientious group of professionals I've had the good fortune to work with. Quality work performed by quality-driven people who really get it."</p>
+            <div class="author">
+              <span class="user-icon"></span>
+              <span class="author-name">MR GANESHA BABU - HOME OWNER AT DEVANAHALLI</span>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <p class="quote">"Exceptional service and attention to detail! The construction process was smooth, and the final result exceeded our expectations."</p>
+            <div class="author">
+              <span class="user-icon"></span>
+              <span class="author-name">MS PRIYA SHARMA - HOME OWNER AT WHITEFIELD</span>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <p class="quote">"Highly recommend 100 Pillars for their professionalism and timely delivery. Our dream home is now a reality thanks to them."</p>
+            <div class="author">
+              <span class="user-icon"></span>
+              <span class="author-name">MR RAJESH KUMAR - HOME OWNER AT KORAMANGALA</span>
+            </div>
+          </div>
+        </div>
+        <button class="arrow right-arrow">&gt;</button>
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const totalSlides = slides.length;
+
+    document.querySelector('.left-arrow').addEventListener('click', () => {
+      if (currentSlide > 0) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide--;
+        slides[currentSlide].classList.add('active');
+      }
+    });
+
+    document.querySelector('.right-arrow').addEventListener('click', () => {
+      if (currentSlide < totalSlides - 1) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide++;
+        slides[currentSlide].classList.add('active');
+      }
+    });
+  </script>
+
+    <!--EndWhat Our Home Owners Say-->
+
+
+  <!-- Our Partners-->
+
+  <<section class="partners">
+    <div class="container">
+      <h2>Trusted Partners</h2>
+      <p class="subtitle">Each store partner of ours has been vetted for their quality, pricing and trust. We have long-standing relationships with home fitting & raw material suppliers across Bangalore.</p>
+    
+<div class="partner-logos">
+  <img src="https://5.imimg.com/data5/SELLER/Default/2023/12/366101038/OO/LY/TD/24701847/birla-super-53-grade-cement.jpg" alt="Birla Super">
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Anchor_by_Panasonic_logo.svg/1280px-Anchor_by_Panasonic_logo.svg.png" alt="Anchor">
+  <img src="https://www.nicepng.com/png/detail/352-3527846_gm-modular-presented-by-gm-switches.png" alt="GM">
+  <img src="https://download.logo.wine/logo/Havells/Havells-Logo.wine.png" alt="Havells">
+  <img src="https://www.retail4growth.com/public/uploads/editor/2023-08-23/1692766815.png" alt="Hindware">
+  <img src="https://tiimg.tistatic.com/co_logo/73431305/indus-tmt-industries-ltd--v1.jpg" alt="Indus">
+  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYIi2AdBfnwD-WAJDahSOWxF8Q0YA403XqqxT5j6YB8UvNiIgk" alt="Jaguar">
+  <img src="https://gsispat.in/wp-content/uploads/2020/12/Untitled-2.png" alt="JSW Neosteel">
+  <img src="https://static.theprint.in/wp-content/uploads/2022/02/kajaria-ceramics-logo-2022022806562620220228070722.jpg" alt="Kajaria">
+  <img src="https://kohler.scene7.com/is/image/Kohler/KohlerLogoImage?$CorpSecondary$&crop=110,0,23778,16000&wid=590&hei=397" alt="Kohler">
+  <img src="https://phenolicfibrespares.com/wp-content/uploads/2019/05/Logo_final.png" alt="Phenolic">
+  <img src="https://5.imimg.com/data5/GLADMIN/Default/2023/2/ZM/ZB/VO/300694/sunvik-ready-fix-tmt-500x500.jpg" alt="Sunvik">
+  <img src="https://images.seeklogo.com/logo-png/21/2/supreme-ny-logo-png_seeklogo-216580.png" alt="Supreme">
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Ultratech_Cement_Logo.svg/1200px-Ultratech_Cement_Logo.svg.png" alt="Ultratech">
+  <img src="https://www.zuaricements.com/images/websitelogo12.jpg" alt="Zuari Cement">
+  <img src="https://yt3.googleusercontent.com/ytc/AIdro_nW1vyJ2ssw7WRCHeX6qYWi2i8gPurMvevRfkkuKnJWI-0=s900-c-k-c0x00ffffff-no-rj" alt="Fixit">
+  <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/2aa58e24-fe0f-417b-b91d-807f97c1d529.__CR0,0,600,180_PT0_SX600_V1___.png" alt="MYK Latorrete">
+</div>
+      <button class="scroll-right">→</button>
+    </div>
+  </section>
+  <script>
+    document.querySelector('.scroll-right').addEventListener('click', () => {
+      const logos = document.querySelector('.partner-logos');
+      logos.scrollLeft += 220; // Adjust based on image width + gap
+    });
+
+    document.querySelectorAll('.partner-logos img').forEach(img => {
+      img.addEventListener('click', () => {
+        const url = img.getAttribute('data-url');
+        if (url) window.open(url, '_blank');
+      });
+    });
+  </script>
+
+  <!-- End Our Partners-->
+
+    <!--footer section -->
+    <footer class="footer">
+      <div class="footercontainer">
+        <div class="footer-links">
+          <a href="#support">Support</a>
+          <a href="#terms">Terms & Services</a>
+          <a href="#privacy">Privacy & Policy</a>
+        </div>
+        <div class="footer-sections">
+          <div class="footer-column">
+            <h3>Constructions</h3>
+            <ul>
+              <li><a href="#residential">Residential Construction</a></li>
+              <li><a href="#commercial">Commercial Construction</a></li>
+              <li><a href="#home">Home Construction</a></li>
+              <li><a href="#farmhouse">Farm House Construction</a></li>
+              <li><a href="#addfloor">Add New Floor</a></li>
+              <li><a href="#duplex">Duplex Home Construction</a></li>
+              <li><a href="#independent">Independent House Construction</a></li>
+              <li><a href="#villa">Villa Construction</a></li>
+              <li><a href="#luxury">Luxury Home Construction</a></li>
+              <li><a href="#cost">Cost of New Home Construction</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Interiors</h3>
+            <ul>
+              <li><a href="#res-interior">Residential Interior Design</a></li>
+              <li><a href="#living">Living Room Interior Design</a></li>
+              <li><a href="#kitchen">Kitchen Interior Design</a></li>
+              <li><a href="#bedroom">Bedroom Interior Design</a></li>
+              <li><a href="#bathroom">Bathroom Interior Design</a></li>
+              <li><a href="#office">Office Interior Design</a></li>
+              <li><a href="#commercial-interior">Commercial Interior Design</a></li>
+              <li><a href="#apartment">Apartment Interior Design</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Calculator</h3>
+            <ul>
+              <li><a href="#res-cost">Residential Cost Estimator</a></li>
+              <li><a href="#comm-cost">Commercial Cost Estimator</a></li>
+              <li><a href="#interior-cost">Interior Cost Estimator</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Packages</h3>
+            <ul>
+              <li><a href="#luxury">Luxury</a></li>
+              <li><a href="#commercial">Commercial</a></li>
+              <li><a href="#interior">Interior</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script>
+    // Simple script for the mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav').classList.toggle('nav--active');
+      this.classList.toggle('menu-toggle--active');
+    });
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+    
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;");
+    });
+    
+    document.addEventListener('click', () => {
+      cursor.classList.add("cursor--expand");
+      setTimeout(() => {
+        cursor.classList.remove("cursor--expand");
+      }, 500);
+    });
+  </script>
+</body>
+</html>

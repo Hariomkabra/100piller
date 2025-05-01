@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages - 100 Pillars</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor"></div>
+  
+
+  <!-- floating whats app -->
+  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
+      <img src="https://techfocus24.com/wp-content/uploads/2021/01/whatsapp-button.png" alt="WhatsApp" style="width: 200px; height: 70px;" >
+    </a>
+  </div>
+
+  <!-- floating whats app -->
+
+  
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="index.html" class="logo">
+          <span>100</span>PILLARS
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="work.html">Our Work</a></li>
+        <li class="dropdown">
+          <a href="#">Packages ▼</a>
+          <div class="dropdown-content">
+            <a href="packages.html">Packages</a>
+            <a href="#construction">Construction</a>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="dropdown-content">
+          <a href="packages.html">Packages</a>
+          <a href="#construction">Construction</a>
+        </div>
+        <li><a href="#get-quote" class="get-quote">Get Quote</a></li>
+       </ul>
+        </nav>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="packages">
+    <div class="container">
+      <div class="packages-header">
+        <h2>Packages</h2>
+        <div class="tabs">
+          <button class="tab active" data-type="residential">Residential</button>
+          <button class="tab" data-type="commercial">Commercial</button>
+        </div>
+      </div>
+      <div class="packages-content">
+        <div class="packages-grid residential">
+          <div class="package-card">
+            <h3>Basic Home Package</h3>
+            <p>INR 1,500/sq.ft <br>(inclusive of GST)</p>
+            <a href="#" class="btn btn-secondary">Know More</a>
+          </div>
+          <div class="package-card">
+            <h3>Family Plus Package</h3>
+            <p>INR 1,750/sq.ft <br>(inclusive of GST)</p>
+            <a href="#" class="btn btn-secondary">Know More</a>
+          </div>
+          <div class="package-card">
+            <h3>Luxury Living Package</h3>
+            <p>INR 2,000/sq.ft <br>(inclusive of GST)</p>
+            <a href="#" class="btn btn-secondary">Know More</a>
+          </div>
+          <div class="package-card">
+            <h3>Elite Residence Package</h3>
+            <p>INR 2,300/sq.ft <br>(inclusive of GST)</p>
+            <a href="#" class="btn btn-secondary">Know More</a>
+          </div>
+        </div>
+        <div class="packages-grid commercial hidden">
+          <div class="package-card">
+            <h3>Basic Office Package</h3>
+            <p>INR 1,800/sq.ft <br>(inclusive of GST)</p>
+            <a href="#" class="btn btn-secondary">Know More</a>
+          </div>
+          <div class="package-card">
+            <h3>Standard Retail Package</h3>
+            <p>INR 2,100/sq.ft <br>(inclusive of GST)</p>
+            <a href="#" class="btn btn-secondary">Know More</a>
+          </div>
+          <div class="package-card">
+            <h3>Premium Corporate Package</h3>
+            <p>INR 2,500/sq.ft <br>(inclusive of GST)</p>
+            <a href="#" class="btn btn-secondary">Know More</a>
+          </div>
+          <div class="package-card">
+            <h3>Elite Business Package</h3>
+            <p>INR 2,800/sq.ft <br>(inclusive of GST)</p>
+            <a href="#" class="btn btn-secondary">Know More</a>
+          </div>
+        </div>
+      </div>
+      <div class="packages-footer">
+        <div class="footer-text">
+          <p><strong>Not happy with our packages?</strong><br>We can customize it for you! <br><em>*Rates may vary based on preference</em></p>
+          <p>We do believe in making unique customizations to any sort of building structure, that fits the bill for you. Materials, Interiors, Furnishing, we deal with all.</p>
+        </div>
+        <a href="#" class="btn btn-primary">Book a Free Consultation</a>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const type = tab.getAttribute('data-type');
+        document.querySelectorAll('.packages-grid').forEach(grid => {
+          grid.classList.add('hidden');
+          if (grid.classList.contains(type)) {
+            grid.classList.remove('hidden');
+          }
+        });
+      });
+    });
+  </script>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="footer-links">
+        <a href="#support">Support</a>
+        <a href="#terms">Terms & Services</a>
+        <a href="#privacy">Privacy & Policy</a>
+      </div>
+      <div class="footer-sections">
+        <div class="footer-column">
+          <h3>Constructions</h3>
+          <ul>
+            <li><a href="#residential">Residential Construction</a></li>
+            <li><a href="#commercial">Commercial Construction</a></li>
+            <li><a href="#home">Home Construction</a></li>
+            <li><a href="#farmhouse">Farm House Construction</a></li>
+            <li><a href="#addfloor">Add New Floor</a></li>
+            <li><a href="#duplex">Duplex Home Construction</a></li>
+            <li><a href="#independent">Independent House Construction</a></li>
+            <li><a href="#villa">Villa Construction</a></li>
+            <li><a href="#luxury">Luxury Home Construction</a></li>
+            <li><a href="#cost">Cost of New Home Construction</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Interiors</h3>
+          <ul>
+            <li><a href="#res-interior">Residential Interior Design</a></li>
+            <li><a href="#living">Living Room Interior Design</a></li>
+            <li><a href="#kitchen">Kitchen Interior Design</a></li>
+            <li><a href="#bedroom">Bedroom Interior Design</a></li>
+            <li><a href="#bathroom">Bathroom Interior Design</a></li>
+            <li><a href="#office">Office Interior Design</a></li>
+            <li><a href="#commercial-interior">Commercial Interior Design</a></li>
+            <li><a href="#apartment">Apartment Interior Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Calculator</h3>
+          <ul>
+            <li><a href="#res-cost">Residential Cost Estimator</a></li>
+            <li><a href="#comm-cost">Commercial Cost Estimator</a></li>
+            <li><a href="#interior-cost">Interior Cost Estimator</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Packages</h3>
+          <ul>
+            <li><a href="#luxury">Luxury</a></li>
+            <li><a href="#commercial">Commercial</a></li>
+            <li><a href="#interior">Interior</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Simple script for the mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav').classList.toggle('nav--active');
+      this.classList.toggle('menu-toggle--active');
+    });
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+    
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;");
+    });
+    
+    document.addEventListener('click', () => {
+      cursor.classList.add("cursor--expand");
+      setTimeout(() => {
+        cursor.classList.remove("cursor--expand");
+      }, 500);
+    });
+  </script>
+</body>
+</html>

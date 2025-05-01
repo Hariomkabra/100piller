@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Pillars - Creative Design Agency</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor"></div>
+  
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="index.html" class="logo">
+          <span>100</span>PILLARS
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="work.html">Our Work</a></li>
+        <li class="dropdown">
+          <a href="#">Packages ▼</a>
+          <div class="dropdown-content">
+            <a href="packages.html">Packages</a>
+            <a href="#construction">Construction</a>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="dropdown-content">
+          <a href="packages.html">Packages</a>
+          <a href="#construction">Construction</a>
+        </div>
+        <li><a href="#get-quote" class="get-quote">Get Quote</a></li>
+       </ul>
+        </nav>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- floating whats app -->
+  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
+      <img src="https://techfocus24.com/wp-content/uploads/2021/01/whatsapp-button.png" alt="WhatsApp" style="width: 200px; height: 70px;" >
+    </a>
+  </div>
+
+  <!-- floating whats app -->
+
+  
+
+  <main>
+    <section class="work">
+      <div class="container">
+        <h2 class="section-title">Our Work</h2>
+        <p class="section-subtitle">Explore our portfolio of innovative construction projects that redefine living spaces with quality and precision.</p>
+        <div class="work__filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="2bhk">2BHK</button>
+          <button class="filter-btn" data-filter="3bhk">3BHK</button>
+          <button class="filter-btn" data-filter="residential">Residential</button>
+          <button class="filter-btn" data-filter="industrial">Industrial</button>
+        </div>
+        <div class="work__grid">
+          <div class="work__item" data-category="3bhk residential">
+            <div class="work__image">
+              <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Shiv Residency">
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Shiv Residency</h3>
+              <p class="work__category">3BHK, Residential</p>
+              <button class="view-details-btn" onclick="openModal(1)">View Details</button>
+            </div>
+          </div>
+          <div class="work__item" data-category="2bhk residential">
+            <div class="work__image">
+              <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Palm Grove">
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Palm Grove</h3>
+              <p class="work__category">2BHK, Residential</p>
+              <button class="view-details-btn" onclick="openModal(2)">View Details</button>
+            </div>
+          </div>
+          <div class="work__item" data-category="3bhk residential">
+            <div class="work__image">
+              <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Redwood Estates">
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Redwood Estates</h3>
+              <p class="work__category">3BHK, Residential</p>
+              <button class="view-details-btn" onclick="openModal(3)">View Details</button>
+            </div>
+          </div>
+          <div class="work__item" data-category="industrial">
+            <div class="work__image">
+              <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tech Industrial Park">
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Tech Industrial Park</h3>
+              <p class="work__category">Industrial</p>
+              <button class="view-details-btn" onclick="openModal(4)">View Details</button>
+            </div>
+          </div>
+          <div class="work__item" data-category="2bhk residential">
+            <div class="work__image">
+              <img src="https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pruthvi Residency">
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Pruthvi Residency</h3>
+              <p class="work__category">2BHK, Residential</p>
+              <button class="view-details-btn" onclick="openModal(5)">View Details</button>
+            </div>
+          </div>
+          <div class="work__item" data-category="3bhk residential">
+            <div class="work__image">
+              <img src="https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Skyline Towers">
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Skyline Towers</h3>
+              <p class="work__category">3BHK, Residential</p>
+              <button class="view-details-btn" onclick="openModal(6)">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal for Project Details -->
+      <div class="modal" id="project-modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <div class="modal-body">
+            <div class="modal-images">
+              <img id="modal-image-1" src="" alt="Project Image 1">
+              <img id="modal-image-2" src="" alt="Project Image 2">
+            </div>
+            <h3 id="modal-title"></h3>
+            <p id="modal-category"></p>
+            <p id="modal-description"></p>
+            <ul id="modal-features"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Filter functionality
+      document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          document.querySelector('.filter-btn.active').classList.remove('active');
+          button.classList.add('active');
+          const filter = button.getAttribute('data-filter');
+          document.querySelectorAll('.work__item').forEach(item => {
+            const categories = item.getAttribute('data-category').split(' ');
+            if (filter === 'all' || categories.includes(filter)) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    
+      // Modal functionality
+      const projects = {
+        1: {
+          title: "Shiv Residency",
+          category: "3BHK, Residential",
+          description: "A luxurious 3BHK residential project in Bangalore, designed for modern living with spacious interiors and premium amenities.",
+          features: ["3 Bedrooms", "Swimming Pool", "Landscaped Gardens"],
+          images: [
+            "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          ]
+        },
+        2: {
+          title: "Palm Grove",
+          category: "2BHK, Residential",
+          description: "A serene 2BHK residential project surrounded by greenery, offering a peaceful living experience in Bangalore.",
+          features: ["2 Bedrooms", "Clubhouse", "Jogging Track"],
+          images: [
+            "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/259751/pexels-photo-259751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          ]
+        },
+        3: {
+          title: "Redwood Estates",
+          category: "3BHK, Residential",
+          description: "A premium 3BHK residential estate with modern architecture and eco-friendly design, located in Bangalore.",
+          features: ["3 Bedrooms", "Gymnasium", "Solar Panels"],
+          images: [
+            "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/1571457/pexels-photo-1571457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          ]
+        },
+        4: {
+          title: "Tech Industrial Park",
+          category: "Industrial",
+          description: "A state-of-the-art industrial park designed for tech companies, featuring robust infrastructure and sustainable design.",
+          features: ["Large Warehouses", "Energy-Efficient Systems", "24/7 Security"],
+          images: [
+            "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://www.home-designing.com/wp-content/uploads/2021/07/industrial-living-room.jpg"
+          ]
+        },
+        5: {
+          title: "Pruthvi Residency",
+          category: "2BHK, Residential",
+          description: "A cozy 2BHK residential project in Bangalore, focusing on community living with modern amenities.",
+          features: ["2 Bedrooms", "Community Hall", "Play Area"],
+          images: [
+            "https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          ]
+        },
+        6: {
+          title: "Skyline Towers",
+          category: "3BHK, Residential",
+          description: "A high-rise 3BHK residential project offering panoramic views and luxury living in Bangalore.",
+          features: ["3 Bedrooms", "Infinity Pool", "Concierge Services"],
+          images: [
+            "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          ]
+        }
+      };
+    
+      function openModal(projectId) {
+        const project = projects[projectId];
+        document.getElementById('modal-title').textContent = project.title;
+        document.getElementById('modal-category').textContent = project.category;
+        document.getElementById('modal-description').textContent = project.description;
+        document.getElementById('modal-image-1').src = project.images[0];
+        document.getElementById('modal-image-2').src = project.images[1];
+        const featuresList = document.getElementById('modal-features');
+        featuresList.innerHTML = '';
+        project.features.forEach(feature => {
+          const li = document.createElement('li');
+          li.textContent = feature;
+          featuresList.appendChild(li);
+        });
+        document.getElementById('project-modal').style.display = 'block';
+      }
+    
+      function closeModal() {
+        document.getElementById('project-modal').style.display = 'none';
+      }
+    
+      window.onclick = function(event) {
+        const modal = document.getElementById('project-modal');
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="footer-links">
+        <a href="#support">Support</a>
+        <a href="#terms">Terms & Services</a>
+        <a href="#privacy">Privacy & Policy</a>
+      </div>
+      <div class="footer-sections">
+        <div class="footer-column">
+          <h3>Constructions</h3>
+          <ul>
+            <li><a href="#residential">Residential Construction</a></li>
+            <li><a href="#commercial">Commercial Construction</a></li>
+            <li><a href="#home">Home Construction</a></li>
+            <li><a href="#farmhouse">Farm House Construction</a></li>
+            <li><a href="#addfloor">Add New Floor</a></li>
+            <li><a href="#duplex">Duplex Home Construction</a></li>
+            <li><a href="#independent">Independent House Construction</a></li>
+            <li><a href="#villa">Villa Construction</a></li>
+            <li><a href="#luxury">Luxury Home Construction</a></li>
+            <li><a href="#cost">Cost of New Home Construction</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Interiors</h3>
+          <ul>
+            <li><a href="#res-interior">Residential Interior Design</a></li>
+            <li><a href="#living">Living Room Interior Design</a></li>
+            <li><a href="#kitchen">Kitchen Interior Design</a></li>
+            <li><a href="#bedroom">Bedroom Interior Design</a></li>
+            <li><a href="#bathroom">Bathroom Interior Design</a></li>
+            <li><a href="#office">Office Interior Design</a></li>
+            <li><a href="#commercial-interior">Commercial Interior Design</a></li>
+            <li><a href="#apartment">Apartment Interior Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Calculator</h3>
+          <ul>
+            <li><a href="#res-cost">Residential Cost Estimator</a></li>
+            <li><a href="#comm-cost">Commercial Cost Estimator</a></li>
+            <li><a href="#interior-cost">Interior Cost Estimator</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Packages</h3>
+          <ul>
+            <li><a href="#luxury">Luxury</a></li>
+            <li><a href="#commercial">Commercial</a></li>
+            <li><a href="#interior">Interior</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple script for the mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav').classList.toggle('nav--active');
+      this.classList.toggle('menu-toggle--active');
+    });
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+    
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;");
+    });
+    
+    document.addEventListener('click', () => {
+      cursor.classList.add("cursor--expand");
+      setTimeout(() => {
+        cursor.classList.remove("cursor--expand");
+      }, 500);
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
