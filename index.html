@@ -9,79 +9,69 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
   <div class="cursor"></div>
-  
-  <header class="header">
-    <div class="container">
-      <div class="header__content">
-        <a href="index.html" class="logo">
-          <span>100</span>PILLARS
-        </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li><a href="work.html">Our Work</a></li>
-            <li class="dropdown">
-              <a href="#" aria-haspopup="true" aria-expanded="false">Packages ▼</a>
-              <div class="dropdown-content">
-                <a href="packages.html">Packages</a>
-                <a href="#construction">Construction</a>
-              </div>
-            </li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#get-quote" class="get-quote">Get Quote</a></li>
-          </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="containerr position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo">100Pillars<span>.</span></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <a href="work.html" style="font-style: italic; font-weight: 600;">Our Work</a>
+          <li class="dropdown">
+            <a href="packages.html "style="font-style: italic; font-weight: 600;">Packages</a>
+            <div class="dropdown-content">
+              <a href="#" style="font-style: italic; font-weight: 600;">Residential</a>
+              <a href="#" style="font-style: italic; font-weight: 600;">Industrial</a>
+              <a href="#" style="font-style: italic; font-weight: 600;">Commercial</a>
+            </div>
+          </li>
+          <li><a href="about.html" style="font-style: italic; font-weight: 600;">About Us</a></li>
+          <li><a href="contact.html" style="font-style: italic; font-weight: 600;">Contact</a></li>
+          <li><a href="#" style="font-style: italic; font-weight: 600;">Construction Guide</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="get-quote" style="font-style: italic; font-weight: 600;">Get Quote</a>
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
+
+
 <script>
-  document.querySelectorAll('.dropdown > a').forEach(dropdownToggle => {
-    dropdownToggle.addEventListener('click', function (event) {
-      event.preventDefault();
-      const expanded = this.getAttribute('aria-expanded') === 'true' || false;
-      this.setAttribute('aria-expanded', !expanded);
-      const dropdownContent = this.nextElementSibling;
-      dropdownContent.style.display = expanded ? 'none' : 'block';
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
     });
-  });
-
-  
-  document.querySelector('.menu-toggle').addEventListener('click', function () {
-    document.querySelector('.nav').classList.toggle('nav--active');
-    this.classList.toggle('menu-toggle--active');
-  });
-
 </script>
-  
 
-    <!-- floating whats app -->
-  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
-    <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
-      <img src="https://techfocus24.com/wp-content/uploads/2021/01/whatsapp-button.png" alt="WhatsApp" style="width: 200px; height: 70px;" >
-    </a>
+<section class="hero">
+  <div class="hero-content">
+      <h1>Build Right. Live Smart.</h1>
+      <p>The Pros Behind Bengaluru's Best Homes</p>
+      <a href="#" class="button button-book">Talk to our Architects Now</a>
+      <a href="#" class="button button-packages">Our Packages</a>
   </div>
+</section>
 
-  <!-- floating whats app -->
-
-  <main>
- 
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Build Right. Live Smart.</h1>
-        <p>The Pros Behind Bengaluru's Best Homes</p>
-        <a href="#" class="button button-book">Book Plot Inspection</a>
-        <a href="#" class="button button-packages">Our Packages</a>
-      </div>
-    </section>
-
+  
+    <!-- floating whats app -->
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+      <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
+        <img src="https://techfocus24.com/wp-content/uploads/2021/01/whatsapp-button.png" alt="WhatsApp" style="width: 200px; height: 70px;" >
+      </a>
+    </div>
+  
+    <!-- floating whats app -->
 
 
     <!--Recent Works Section-->
@@ -198,6 +188,7 @@
         </div>
       </div>
     </section>
+    
     <script>
       function goToDetails(url) {
         window.location.href = url;

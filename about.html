@@ -22,40 +22,46 @@
 
   <!-- floating whats app -->
   
-  <header class="header">
-    <div class="container">
-      <div class="header__content">
-        <a href="index.html" class="logo">
-          <span>100</span>PILLARS
-        </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li><a href="work.html">Our Work</a></li>
-        <li class="dropdown">
-          <a href="#">Packages ▼</a>
-          <div class="dropdown-content">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="containerr position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo">100Pillars<span>.</span></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="work.html">Our Work</a></li>
+          <li class="dropdown">
             <a href="packages.html">Packages</a>
-            <a href="#construction">Construction</a>
-          </div>
-        </li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <div class="dropdown-content">
-          <a href="packages.html">Packages</a>
-          <a href="#construction">Construction</a>
-        </div>
-        <li><a href="#get-quote" class="get-quote">Get Quote</a></li>
-       </ul>
-        </nav>
-        <button class="menu-toggle">
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+            <div class="dropdown-content">
+              <a href="#">Residential</a>
+              <a href="#">Industrial</a>
+              <a href="#">Commercial</a>
+            </div>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Construction Guide</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="get-quote">Get Quote</a>
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+  <script>
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
 
-  <main>
+<!--about section -->
+
     <section class="about">
       <div class="container">
         <div class="about__grid">
@@ -135,7 +141,7 @@
       });
     </script>
     
-  </main>
+  <!--footer section-->
 
   <footer class="footer">
     <div class="footercontainer">
