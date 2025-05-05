@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "" # Leave empty if no build process is required
+command = "npm run build"
 
 [[redirects]]
 from = "/*"
