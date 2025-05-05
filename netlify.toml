@@ -1,8 +1,8 @@
-
-[[redirects]]
-from = "*"
-to = "index.html"
-status = 200
-
 [build]
 publish = "public"
+command = "" # Leave empty if no build process is required
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
