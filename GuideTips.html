@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
  
 </head>
 <body>
@@ -63,46 +64,128 @@
   <!-- floating whats app -->
    
 <!--hero section-->
-  <main>
-    <section class="reach-out">
-      <div class="wrapper">
-        <h2>Contact Us</h2>
-        <div class="estimate-box">
-          <h3>GET A FREE ESTIMATE</h3>
-          <form>
-            <div class="input-block">
-              <label for="user-name">Name<span>*</span></label>
-              <input type="text" id="user-name" required>
-            </div>
-            <div class="input-block">
-              <label for="phone">Mobile<span>*</span></label>
-              <input type="tel" id="phone" required>
-            </div>
-            <div class="input-block">
-              <label for="user-email">Email<span>*</span></label>
-              <input type="email" id="user-email" required>
-            </div>
-            <div class="input-block">
-              <label for="location">Plot Location</label>
-              <select id="location">
-                <option value="">-None-</option>
-                <option value="location1">Mumbai</option>
-                <option value="location2">Delhi</option>
-              </select>
-            </div>
-            <div class="input-block">
-              <label for="needs">Construction Requirements</label>
-              <textarea id="needs" rows="4"></textarea>
-            </div>
-            <div class="form-controls">
-              <button type="reset" class="action-btn clear">RESET</button>
-              <button type="submit" class="action-btn quote">GET A FREE QUOTE NOW</button>
-            </div>
-          </form>
+<section class="construction-section">
+    <div class="content">
+      <h1>Hire the best construction service</h1>
+      <div class="stats">
+        <div class="stat">
+            <i class="fa-solid fa-house" style="color:  #e63946;"></i>
+          <div>
+            <span class="highlight">1200+</span>
+            <p>Homes</p>
+          </div>
+        </div>
+        <div class="stat">
+            <i class="fa-solid fa-square-check" style="color: #e63946;"></i>
+          <div>
+            <span class="highlight">310+</span>
+            <p>Quality Checks</p>
+          </div>
+        </div>
+        <div class="stat">
+            <i class="fa-solid fa-indian-rupee-sign" style="color: #e63946;"></i>
+          <div>
+            <span class="highlight">100%</span>
+            <p>Safe Money Transaction</p>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+      <button class="cta-btn">LET’S BUILD →</button>
+    </div>
+    <div class="image-area">
+        <img src="https://d2d4xyu1zrrrws.cloudfront.net/website/web-ui/assets/images/svg/ic-letbuild.svg" alt="Illustration of houses" width="500" height="700" />
+
+    </div>
+  </section>
+
+
+  <!--Referral Program-->
+
+  <section class="referral-section">
+    <div class="referral-card">
+      <div class="referral-content">
+        <h2><span class="highlight">▰</span> Referral Program</h2>
+        <p>Refer your friends & family looking for house construction and earn cashbacks/discounts* upto 20,000 INR today</p>
+        <a href="#" class="btn">Learn More →</a>
+      </div>
+      <div class="referral-image">
+        <img src="https://www.jobsoid.com/wp-content/uploads/2021/07/Employee-Referral-Bonus-Blog-Image.jpg" width="400" height="700" alt="Referral Illustration">
+      </div>
+    </div>
+  </section>
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #fff;
+      }
+      
+      .referral-section {
+        padding: 80px 40px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .referral-card {
+        background-color: #fff4f0;
+        border-radius: 10px;
+        padding: 100px;
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+      
+      .referral-content {
+        flex: 1;
+      }
+      
+      .referral-content h2 {
+        font-size: 26px;
+        color: #2c2c2c;
+        margin-bottom: 25px;
+      }
+      
+      .referral-content .highlight {
+        color: #d62828;
+        margin-right: 8px;
+        font-weight: bold;
+      }
+      
+      .referral-content p {
+        font-size: 16px;
+        color: #444;
+        margin-bottom: 25px;
+        line-height: 1.5;
+      }
+      
+      .btn {
+        background-color: #d62828;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 22px;
+        border-radius: 5px;
+        font-weight: 600;
+        display: inline-block;
+        transition: background 0.3s;
+      }
+      
+      .btn:hover {
+        background-color: #d6541a;
+      }
+      
+     
+      
+  </style>
 
   <!--End hero section-->
 

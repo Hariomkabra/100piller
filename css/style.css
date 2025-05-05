@@ -393,12 +393,12 @@ body {
 }
 
 .button.button-book {
-  background-color: #e63946;
+  background-color:  #000;
   color: #fff;
 }
 
 .button.button-packages {
-  background-color: #000;
+  background-color:  #e63946;
   color: #fff;
 }
 
@@ -1769,6 +1769,113 @@ h2::after {
   border-radius: 0 0 50% 50% / 0 0 100% 100%;
   z-index: 0;
 }
+
+/*Quality Checks*/
+.section-heading {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.section-heading h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.quality-banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  flex: 1;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-and-text {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+
+
+.text-content h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.text-content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.know-more-btn {
+  background-color: #f2654a;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.right-section {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checklist-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.quality-checks {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #f2654a;
+  color: #fff;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.consultation-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #f2654a;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+ 
+/* EndQuality checks*/
+
+
+
+
 /*Our Partners*/
 
 .partners {
@@ -2154,6 +2261,98 @@ h2::after {
   background-color: #d62828;
 }
 
+/*construction service*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  color: #222;
+}
+
+.stat i {
+  font-size: 24px;
+  color: #e63946;
+}
+
+.construction-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat img {
+  width: 24px;
+  height: 24px;
+}
+
+.stat .highlight {
+  font-weight: bold;
+  color:  #e63946;
+  font-size: 18px;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #666;
+}
+
+.cta-btn {
+  background-color: #e63946;
+  color: white;
+  padding: 12px 25px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #cc4e18;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #ff0015;
+}
+
+.image-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-area img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*End construction service*/
 /* Footer */
 .footer {
   background-color: #1a1a2e;
