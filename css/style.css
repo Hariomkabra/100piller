@@ -140,8 +140,8 @@ body {
 }
 
 .header.scrolled {
-  background-color: rgba(255, 255, 255, 0.1); /* Glassmorphism effect when scrolled */
-  backdrop-filter: blur(5px); /* Blurry background for modern look */
+  background-color: rgba(250, 247, 247, 0.925); /* Glassmorphism effect when scrolled */
+  backdrop-filter: blur(8px); /* Blurry background for modern look */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
