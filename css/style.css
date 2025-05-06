@@ -1018,6 +1018,75 @@ h2::after {
   transform: scale(1.05);
 }
 
+
+/*“Future Homes – Smart & Leisure*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.future-homes {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.future-homes h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #2b2b2b;
+  position: relative;
+  display: inline-block;
+}
+
+.future-homes h2::after {
+  content: '';
+  width: 60%;
+  height: 2px;
+  background-color: #f44336;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.future-homes .description {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 20px auto 40px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 160px;
+}
+
+.feature img {
+  width: 100px;
+  height: 90px;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #333;
+}
+
+
+/*End Future Homes – Smart & Leisure*/
+
 /* team section */
 .team {
   padding: 60px 0;
@@ -1381,6 +1450,54 @@ h2::after {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-left: 5px solid #28a745;
 }
+
+/* packge worked detailed*/
+
+.stats-section {
+  background-image: url('https://aapkapainter.com/blog/wp-content/uploads/2023/04/sand-1-1024x819.jpg'); /*your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.stat-box {
+  color: #f44336; /* soft red */
+  max-width: 180px;
+}
+
+.stat-box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.stat-box h2 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: bold;
+  color:#f44336;
+}
+
+.stat-box p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: rgb(33, 31, 31);
+
+}
+
+
+/* End packge worked detailed*/
 
 .footer-text p {
   font-size: 16px;
@@ -1970,7 +2087,72 @@ h2::after {
 }
 /*End Our Partners*/
 
-/*End Construction Services*/
+
+/* guideTip Hero*/
+.construction-hero {
+  position: relative;
+  background-image: url('https://customer.bricknbolt.com/img/about/about.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.features {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature i {
+  font-size: 24px;
+  color: white;
+}
+
+.btn-build {
+  background-color: #f6531e;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-build:hover {
+  background-color: #d9440c;
+}
+
+
+
+/* End guideTip Hero*/
+
+/* Construction Services*/
 .services {
   padding: 60px 0;
   background-color: #f5f5f5;
@@ -2066,14 +2248,10 @@ h2 {
   color: #fff;
 }
 
-
-
 .btn-primary {
   background-color: #28a745;
   color: #fff;
 }
-
-
 
 .modal {
   display: none;
