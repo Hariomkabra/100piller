@@ -2476,52 +2476,37 @@ body {
 }
 
 /*End construction service*/
+
 /* Footer */
 .footer {
-  background-color: #1a1a2e;
+  background-color: #1A1A2E; /* Main footer background */
   color: #fff;
-  padding: 40px 0;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
 }
 
 .footercontainer {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.footer-links a:hover {
-  color: #e63946;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .footer-sections {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .footer-column {
-  flex: 1;
-  min-width: 200px;
+  flex: 1 1 220px;
+  margin: 10px;
 }
 
-.footer-column h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #fff;
+.footer-column h3,
+.footer-column h4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .footer-column ul {
@@ -2530,19 +2515,219 @@ body {
 }
 
 .footer-column ul li {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  color: #CCCCCC;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-column p,
+.footer-column a {
+  color: #CCCCCC;
+  font-size: 14px;
+}
+
+.footer-links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #CCCCCC;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #AAAAAA;
+}
+
+.footer-bottom a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: #CCCCCC;
+  margin-right: 10px;
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid #444;
+  border-radius: 50%;
+  padding: 8px;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #ffffff;
+  color: #1A1A2E;
+}
+
+.footer {
+  background-color: #1A1A2E;
+  color: #ccc;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  margin: 15px;
+}
+
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
 }
 
 .footer-column ul li a {
   color: #ccc;
   text-decoration: none;
   font-size: 14px;
+  transition: 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-  color: #e63946;
+  color: #fff;
+  text-decoration: underline;
 }
 
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/*Build your dream footer*/
+
+.extended-footer {
+  background-color:  #1A1A2E; /* Matches dark theme */
+  color: #f0f0f0;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ext-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ext-section {
+  margin-bottom: 40px;
+}
+
+.ext-section h2,
+.ext-section h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.ext-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.ext-services {
+  list-style: none;
+  padding-left: 0;
+  columns: 2;
+  margin-top: 20px;
+}
+
+.ext-services li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+
+/*End Build Your dream footer*/
+
+/*B2B*/
+
+.construction-footer {
+  background-color: #1A1A2E;
+  color: #ffffff;
+  padding: 60px 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-content h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-content h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #eeeeee;
+  font-weight: 500;
+}
+
+.footer-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/*End B2B/
 /*Get a Quote*/
 
 
