@@ -1762,130 +1762,58 @@ h2 {
 
 
 /*What Our Home Owners Say*/
-
-.testimonials {
-  padding: 60px 0;
-  background: url('https://media.istockphoto.com/id/2110310187/photo/luxury-tropical-pool-villa-at-dusk.jpg?s=612x612&w=0&k=20&c=r8UTpMnbLWD_DOKHAcu6dw-MJEcGg0CTqt0ICa84D84=') no-repeat center center/cover;
+.testimonial-section {
+  
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
   position: relative;
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-
-h2 {
-  font-size: 36px;
-  color: #fff;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-h2::after {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 2px;
-  background-color: #e63946;
-  margin: 10px auto;
-}
-
-.testimonial-slider {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.overlay {
+  background-image: url('https://img.freepik.com/premium-vector/luxurious-dark-background-with-gold-glitter_95742-389.jpg?w=360'); /* replace with your image */
+  padding: 60px 20px;
   max-width: 800px;
   margin: 0 auto;
-}
-
-.testimonial-content {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.testimonial-slide {
-  display: none;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 30px;
   border-radius: 10px;
-  transition: opacity 0.5s ease;
 }
 
-.testimonial-slide.active {
-  display: block;
+.testimonial-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-.quote {
+.underline {
+  width: 60px;
+  height: 2px;
+  background-color: #e74c3c;
+  margin: 10px auto 30px;
+  border: none;
+}
+
+.icon i {
+  font-size: 50px;
+  background: white;
+  color: #333;
+  border-radius: 50%;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.testimonial {
   font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
   font-style: italic;
+  margin-bottom: 20px;
 }
 
 .author {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.user-icon {
-  width: 40px;
-  height: 40px;
-  background: url('https://media.istockphoto.com/id/2110310187/photo/luxury-tropical-pool-villa-at-dusk.jpg?s=612x612&w=0&k=20&c=r8UTpMnbLWD_DOKHAcu6dw-MJEcGg0CTqt0ICa84D84=') no-repeat center center/cover;
-  border-radius: 50%;
-}
-
-.author-name {
+  font-weight: bold;
+  letter-spacing: 1px;
   font-size: 16px;
-  font-weight: 600;
 }
 
-.arrow {
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  border: none;
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  transition: background-color 0.3s ease;
-}
-
-.left-arrow {
-  left: -40px;
-}
-
-.right-arrow {
-  right: -40px;
-}
-
-.arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.testimonials::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background: radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 70%);
-  border-radius: 0 0 50% 50% / 0 0 100% 100%;
-  z-index: 0;
-}
 
 /*Quality Checks*/
 .section-heading {

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
  
 </head>
 <body>
@@ -476,60 +477,24 @@
 
 
   <!--What Our Home Owners Say-->
-  <section class="testimonials">
-    <div class="container">
-      <h2>What Our Home Owners Say</h2>
-      <div class="testimonial-slider">
-        <button class="arrow left-arrow">&lt;</button>
-        <div class="testimonial-content">
-          <div class="testimonial-slide active">
-            <p class="quote">"The team at 100 Pillars are always the most conscientious group of professionals I've had the good fortune to work with. Quality work performed by quality-driven people who really get it."</p>
-            <div class="author">
-              <span class="user-icon"></span>
-              <span class="author-name">MR GANESHA BABU - HOME OWNER AT DEVANAHALLI</span>
-            </div>
-          </div>
-          <div class="testimonial-slide">
-            <p class="quote">"Exceptional service and attention to detail! The construction process was smooth, and the final result exceeded our expectations."</p>
-            <div class="author">
-              <span class="user-icon"></span>
-              <span class="author-name">MS PRIYA SHARMA - HOME OWNER AT WHITEFIELD</span>
-            </div>
-          </div>
-          <div class="testimonial-slide">
-            <p class="quote">"Highly recommend 100 Pillars for their professionalism and timely delivery. Our dream home is now a reality thanks to them."</p>
-            <div class="author">
-              <span class="user-icon"></span>
-              <span class="author-name">MR RAJESH KUMAR - HOME OWNER AT KORAMANGALA</span>
-            </div>
-          </div>
-        </div>
-        <button class="arrow right-arrow">&gt;</button>
+  <section class="testimonial-section">
+    <div class="overlay">
+      <h2 style="color: #ffff;">What Our Home Owners Say </h2>
+      <hr class="underline" />
+  
+      <div class="icon">
+        <i class="fa-solid fa-circle-user" style="color: #d98c20; font-size :60px;"></i>
       </div>
+  
+      <p class="testimonial">
+        “The team at 100 Pillars are always the most conscientious group of professionals I've had the good fortune to work with.
+        Quality work performed by quality-driven people who really get it.”
+      </p>
+  
+      <p class="author">MR GANESH BABU • HOME OWNER AT DEVANAHALLI</p>
     </div>
+  
   </section>
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.testimonial-slide');
-    const totalSlides = slides.length;
-
-    document.querySelector('.left-arrow').addEventListener('click', () => {
-      if (currentSlide > 0) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide--;
-        slides[currentSlide].classList.add('active');
-      }
-    });
-
-    document.querySelector('.right-arrow').addEventListener('click', () => {
-      if (currentSlide < totalSlides - 1) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide++;
-        slides[currentSlide].classList.add('active');
-      }
-    });
-  </script>
-
     <!--EndWhat Our Home Owners Say-->
 
 
