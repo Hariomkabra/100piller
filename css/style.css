@@ -1392,7 +1392,7 @@ h2::after {
 }
 
 .tab.active {
-  background-color: #6b48ff;
+  background-color: #ff4848;
   color: #fff;
   border-color: #6b48ff;
 }
@@ -1458,9 +1458,9 @@ h2::after {
 }
 
 .btn-secondary:hover {
-  background-color: #e63946;
+  background-color: #f44336;
   color: #fff;
-  border-color: #e63946;
+  border-color: #f44336;
 }
 
 .packages-footer {
@@ -1471,7 +1471,7 @@ h2::after {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #28a745;
+  border-left: 5px solid #ef281e;
 }
 
 /* packge worked detailed*/
@@ -1538,7 +1538,7 @@ h2::after {
 }
 
 .btn-primary {
-  background-color: #28a745;
+  background-color: #a72828;
   color: #fff;
   padding: 12px 25px;
   border-radius: 25px;
@@ -1548,7 +1548,7 @@ h2::after {
 }
 
 .btn-primary:hover {
-  background-color: #218838;
+  background-color: #f44336;
   transform: scale(1.05);
 }
 
@@ -2189,12 +2189,12 @@ h2 {
 }
 
 .btn-secondary {
-  background-color: #28a745;
+  background-color: #cb0101;
   color: #fff;
 }
 
 .btn-primary {
-  background-color: #28a745;
+  background-color: #cb0101;
   color: #fff;
 }
 
