@@ -110,38 +110,125 @@
     </section>
 
     
+<!--out team -->
+<style>
+  body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+      color: #333;
+  }
 
-    <section class="team">
-      <div class="container">
-        <h2 class="section-title">Our Team</h2>
-        <div class="team__grid">
-          <div class="team__member">
-            <div class="team__image-wrapper">
-              <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="John Doe">
-              <div class="cursor-animation"></div>
-            </div>
-            <h3 class="team__name">John Doe</h3>
-            <p class="team__role">Creative Director</p>
+  .management-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+      color: #d9534f; /* Example accent color */
+      margin-top: 0;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+  }
+
+  .team-description {
+      line-height: 1.6;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+  }
+
+  .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+  .team-member {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px;
+      width: calc(50% - 10px); /* Two members per row on larger screens */
+      box-sizing: border-box;
+  }
+
+  .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+  }
+
+  .member-info {
+      flex-grow: 1;
+  }
+
+  .member-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+  }
+
+  .member-title {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 8px;
+  }
+
+  .member-details {
+      font-size: 0.85em;
+      line-height: 1.4;
+      color: #666;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      .team-member {
+          width: 100%; /* One member per row on smaller screens */
+      }
+  }
+</style>
+</head>
+<body>
+<div class="management-section">
+  <h2>MANAGEMENT & TEAM</h2>
+  <p class="team-description">
+      The core same of highly respected and experienced engineers, foremen and ground staff are all consulting which have been added to over the years. The breadth and depth of our knowledge base established over this period have been integrated into specifications for new projects as they evolved. Through out our involvement in this industry we have been successful in retaining the services of highly respected consultants who have added to our success in delivering quality work. Our Company carries a very proud reputation for quality of work with a strong emphasis placed on our attitude and the manner of client relationship. Without this we would not have achieved the level of success we have enjoyed in moving to where we are as a major service provider to the construction industry.
+  </p>
+  <p class="team-description">
+      Our repeat business in this sector is as a result of developing strong working relationships with our clients and their consultants. We combine value engineering and problem solution to give our Clients the best options in a manner that suits the industry requirements as a result of our experience. We provide a flexible approach which we have found is a vital attribute in this industry.
+  </p>
+
+  <div class="team-members">
+      <div class="team-member">
+          <img src="img/YRReaddy.JPG" alt="Yemme Rajashekhar Reddy">
+          <div class="member-info">
+              <div class="member-name">Yemme Rajashekhar Reddy</div>
+              <div class="member-title">Founder and Director of Livingwalls Projects Pvt Ltd Company</div>
+              <div class="member-details">
+                  He holds a bachelor's degree in Fashion Designing from Hyderabad and diploma in Merchandising from Apparel Training & Design Centre Hyderabad. He had been working with Shoppers Stop as a Area Visual Merchandising Head South. He started Livinspace company in 2014 successfully completed more than 150 Projects in Civil & More than 600+ Projects in Interiors.
+              </div>
           </div>
-          <div class="team__member">
-            <div class="team__image-wrapper">
-              <img src="https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Jane Smith">
-              <div class="cursor-animation"></div>
-            </div>
-            <h3 class="team__name">Jane Smith</h3>
-            <p class="team__role">Lead Designer</p>
-          </div>
-          <div class="team__member">
-            <div class="team__image-wrapper">
-              <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mike Johnson">
-              <div class="cursor-animation"></div>
-            </div>
-            <h3 class="team__name">Mike Johnson</h3>
-            <p class="team__role">Technical Lead</p>
-          </div>
-        </div>
       </div>
-    </section>
+
+      <div class="team-member">
+          <img src="img/YWReaddy.JPG" alt="Yemme Swathi Reddy">
+          <div class="member-info">
+              <div class="member-name">Yemme Swathi Reddy</div>
+              <div class="member-title">Managing Director of Livingwalls Projects Pvt Ltd</div>
+              <div class="member-details">
+                  She holds a bachelor's degree from Anantapur. She had been working in Construction & Interior Industry for more than 8 years. She joined Livingwalls Projects Pvt Ltd company in 2021.
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
     <script>
       document.querySelectorAll('.team__image-wrapper').forEach(wrapper => {
         const cursorAnimation = wrapper.querySelector('.cursor-animation');
