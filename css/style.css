@@ -149,7 +149,6 @@ body {
   height: 50px; /* Reduced height */
   padding: 0 20px; /* Optional: Adjust horizontal padding */
   
-  
 }
 
 .containerr {
@@ -1476,7 +1475,7 @@ h2::after {
 
 /* packge worked detailed*/
 
-.stats-section {
+.stats-sectionn {
   background-image: url('https://aapkapainter.com/blog/wp-content/uploads/2023/04/sand-1-1024x819.jpg'); /*your background image */
   background-size: cover;
   background-position: center;
@@ -1792,12 +1791,12 @@ h2 {
   padding: 100px 20px;
   position: relative;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
 }
 
 
-.overlay {
+.overlaay {
   background-image: url('https://img.freepik.com/premium-vector/luxurious-dark-background-with-gold-glitter_95742-389.jpg?w=360'); /* replace with your image */
   padding: 30px 10px;
   max-width: 800px;
@@ -1809,6 +1808,7 @@ h2 {
   letter-spacing: 2px;
   font-size: 32px;
   margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
 .underline {
