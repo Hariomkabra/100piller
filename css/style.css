@@ -126,6 +126,7 @@ body {
 }
 
 /* Header */
+/* Header */
 .header {
   display: flex;
   align-items: center;
@@ -144,6 +145,13 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.header.scrolled {
+  height: 50px; /* Reduced height */
+  padding: 0 20px; /* Optional: Adjust horizontal padding */
+  
+  
+}
+
 .containerr {
   width: 90%;
   max-width: 1100px;
@@ -152,7 +160,21 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+/* during the scrolled down*/
 
+.logo-img {
+  height: 50px;     /* Initial large size */
+  width: 150;
+  transition: height 0.3s ease, width 0.3s ease;
+  display: block;
+}
+
+/* Shrink logo when header is scrolled */
+.header.scrolled .logo-img {
+  height: 60px;     /* Smaller size when scrolled */
+}
+
+/* Endduring the scrolled down*/
 .logo {
   font-size: 32px;
   font-weight: 700;
@@ -161,8 +183,8 @@ body {
   transition: color 0.3s ease;
 }
 .logo-img {
-  height: 10px;    /* Adjust height as needed */
-  width: 20px;     /* Maintains aspect ratio */
+  height: 80px;    /* Adjust height as needed */
+  width: 150px;     /* Maintains aspect ratio */
   display: block;
 }
 .logo span {
@@ -334,6 +356,7 @@ body {
     width: fit-content;
   }
 }
+
 
 /*end header*/
 
@@ -1662,7 +1685,7 @@ h2 {
 
 /*End how it work*/
 
-/*Why 100Pillars*/
+/*Why change to living walls */
 .why-us {
   padding: 60px 0;
   background-color: #fff5e6;
