@@ -91,39 +91,6 @@
   background-color: var(--color-accent);
 }
 
-/* Custom Cursor */
-.cursor {
-  width: 2rem;
-  height: 2rem;
-  border: 2px solid var(--color-accent);
-  border-radius: 50%;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 0.1s ease;
-  transition-property: width, height, border;
-  z-index: 9999;
-  mix-blend-mode: difference;
-}
-
-.cursor--expand {
-  width: 5rem;
-  height: 5rem;
-  border: 2px solid var(--color-accent);
-}
-
-
-
-@media (max-width: 768px) {
-  .cursor {
-    display: none;
-  }
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-}
 
 /* Header */
 
@@ -143,13 +110,17 @@ body {
   background-color: rgba(250, 247, 247, 0.925); /* Glassmorphism effect when scrolled */
   backdrop-filter: blur(8px); /* Blurry background for modern look */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 60px; /* Reduced height */
+  padding: 0 20px; /* Optional: Adjust horizontal padding */
 }
 
-.header.scrolled {
-  height: 50px; /* Reduced height */
-  padding: 0 20px; /* Optional: Adjust horizontal padding */
-  
+.logo {
+  margin-left: 50px; /* Pushes logo to the right */
+  display: flex;
+  align-items: center;
 }
+
+
 
 .containerr {
   width: 90%;
@@ -158,14 +129,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-/* during the scrolled down*/
-
-.logo-img {
-  height: 50px;     /* Initial large size */
-  width: 150;
-  transition: height 0.3s ease, width 0.3s ease;
-  display: block;
 }
 
 /* Shrink logo when header is scrolled */
@@ -177,8 +140,10 @@ body {
 /* Endduring the scrolled down*/
 
 .logo-img {
-  height: 100px;    /* Adjust height as needed */
+  height: 120px;    /* Adjust height as needed */
   width: 200px;     /* Maintains aspect ratio */
+  display: block;
+  transition: height 0.3s ease, width 0.3s ease;
   display: block;
 }
 .logo span {
@@ -217,6 +182,7 @@ body {
   height: 100px;
   width: auto;
   display: block;
+  margin-left: 50px; 
 }
 .logo span {
   color: var(--text-light);
