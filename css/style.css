@@ -1932,9 +1932,6 @@ h2 {
  
 /* EndQuality checks*/
 
-
-
-
 /*Our Partners*/
 
 .partners {
@@ -2038,9 +2035,7 @@ h2::after {
   background-position: center;
   color: white;
   padding: 80px 20px;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -2090,186 +2085,101 @@ h2::after {
   background-color: #d9440c;
 }
 
-
-
 /* End guideTip Hero*/
 
 /* Construction Services*/
-.services {
-  padding: 60px 0;
-  background-color: #f5f5f5;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  color: #222;
 }
 
-h2 {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.service-card {
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.image-wrapper {
-  position: relative;
-}
-
-.service-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
-}
-
-.service-card:hover img {
-  opacity: 0.8;
-}
-
-.image-wrapper .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.service-card:hover .image-wrapper .btn {
-  opacity: 1;
-}
-
-.service-card h3 {
+.stat i {
   font-size: 24px;
-  color: #333;
-  margin: 20px 20px 10px;
-  font-weight: 600;
+  color: #e63946;
 }
 
-.service-card p {
-  font-size: 16px;
-  color: #666;
-  margin: 0 20px 20px;
-  line-height: 1.5;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-secondary {
-  background-color: #cb0101;
-  color: #fff;
-}
-
-.btn-primary {
-  background-color: #cb0101;
-  color: #fff;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
+.construction-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
   background-color: #fff;
-  margin: 10% auto;
-  padding: 30px;
-  border: 1px solid #888;
-  width: 70%;
-  max-width: 600px;
-  border-radius: 15px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.close-btn {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+.content {
+  flex: 1;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat img {
+  width: 24px;
+  height: 24px;
+}
+
+.stat .highlight {
   font-weight: bold;
-  cursor: pointer;
+  color:  #e63946;
+  font-size: 18px;
 }
 
-.close-btn:hover,
-.close-btn:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#modal-title {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#modal-body {
-  font-size: 16px;
+.stat p {
+  font-size: 14px;
   color: #666;
-  margin-bottom: 20px;
 }
 
-#modal-body p {
-  margin: 10px 0;
-  line-height: 1.6;
+.cta-btn {
+  background-color: #e63946;
+  color: white;
+  padding: 12px 25px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #cc4e18;
+  transition: background 0.3s ease;
 }
 
-.more-details {
-  margin-top: 20px;
+.cta-btn:hover {
+  background-color: #ff0015;
 }
 
-.more-details.hidden {
-  display: none;
+.image-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-#more-details-body {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 20px;
+.image-area img {
+  max-width: 100%;
+  height: auto;
 }
 
-#more-details-body p {
-  margin: 10px 0;
-  line-height: 1.6;
-}
+
+
 /*End Construction Services*/
 
 /* Contact Section */
@@ -2381,98 +2291,7 @@ h2::after {
   background-color: #d62828;
 }
 
-/*construction service*/
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: white;
-  color: #222;
-}
-
-.stat i {
-  font-size: 24px;
-  color: #e63946;
-}
-
-.construction-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 80px;
-  min-height: 100vh;
-  background-color: #fff;
-}
-
-.content {
-  flex: 1;
-}
-
-.content h1 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-.stats {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
-.stat {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.stat img {
-  width: 24px;
-  height: 24px;
-}
-
-.stat .highlight {
-  font-weight: bold;
-  color:  #e63946;
-  font-size: 18px;
-}
-
-.stat p {
-  font-size: 14px;
-  color: #666;
-}
-
-.cta-btn {
-  background-color: #e63946;
-  color: white;
-  padding: 12px 25px;
-  font-size: 14px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 3px 3px 0 #cc4e18;
-  transition: background 0.3s ease;
-}
-
-.cta-btn:hover {
-  background-color: #ff0015;
-}
-
-.image-area {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.image-area img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*End construction service*/
 
 /* Footer */
 .footer {
