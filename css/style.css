@@ -2030,13 +2030,15 @@ h2::after {
 /* guideTip Hero*/
 .construction-hero {
   position: relative;
-  background-image: url('https://customer.bricknbolt.com/img/about/about.jpg'); /* Replace with your image path */
+  background-image: url('https://customer.bricknbolt.com/img/about/about.jpg');
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 80px 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .hero-content {
@@ -2046,29 +2048,46 @@ h2::after {
 .hero-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .hero-content p {
   font-size: 18px;
   margin-bottom: 30px;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-weight: 300;
 }
 
 .features {
   display: flex;
-  gap: 40px;
+  gap: 50px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .feature {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  text-align: center;
+  min-width: 100px;
 }
 
 .feature i {
-  font-size: 24px;
+  font-size: 28px;
   color: white;
+  margin-bottom: 10px;
+}
+
+.feature-text strong {
+  font-size: 18px;
+  display: block;
+  font-weight: bold;
+}
+
+.feature-text div {
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .btn-build {
@@ -2078,7 +2097,7 @@ h2::after {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
 .btn-build:hover {
