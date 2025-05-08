@@ -297,6 +297,32 @@
     });
   </script>
 
+  <script>
+    let currentStep = 0;
+    const steps = document.querySelectorAll('.step');
+    const details = document.querySelectorAll('.details');
+    const totalSteps = steps.length;
+  
+    function showStep(index) {
+      // Remove active classes
+      steps.forEach(step => step.classList.remove('active'));
+      details.forEach(detail => detail.classList.remove('active'));
+  
+      // Add active class to current
+      steps[index].classList.add('active');
+      details[index].classList.add('active');
+    }
+  
+    function nextStep() {
+      currentStep = (currentStep + 1) % totalSteps;
+      showStep(currentStep);
+    }
+  
+    // Start cycling every 3 seconds
+    showStep(currentStep); // Show first step
+    setInterval(nextStep, 3000);
+  </script>
+
  <!--End how it work-->
   
     <!--Construction Services-->
