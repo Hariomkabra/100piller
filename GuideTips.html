@@ -156,63 +156,61 @@
 <style>
   .construction-section {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    padding: 4rem 6%;
+    padding: 5rem 3rem;
     background-color: #f7f7f7;
-    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .construction-section .content {
     flex: 1 1 50%;
-    max-width: 600px;
+    max-width: 650px;
   }
   
   .construction-section h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: #1d3557;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
   
   .stats {
     display: flex;
+    gap: 2.5rem;
     flex-wrap: wrap;
-    gap: 1.5rem;
     margin-bottom: 2.5rem;
   }
   
   .stat {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
-    background: #fff;
-    padding: 1.5rem 1.8rem;
+    gap: 1.5rem;
+    background: #ffffff;
+    padding: 1.5rem 2rem;
     border-radius: 14px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    min-width: 220px;
-    
     transition: transform 0.3s ease;
+    min-width: 220px;
   }
   
   .stat:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
   }
   
   .stat i {
-    font-size: 2.4rem;
-    color: #e63946;
+    font-size: 2.5rem;
   }
   
   .highlight {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: #e63946;
   }
   
   .stat p {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #333;
   }
   
@@ -220,11 +218,11 @@
     display: inline-block;
     background-color: #e63946;
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: background-color 0.3s ease;
   }
   
@@ -233,10 +231,11 @@
   }
   
   .image-area {
-    flex: 1 1 45%;
+    flex: 1 1 40%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
   }
   
   .image-area img {
