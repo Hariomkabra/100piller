@@ -2377,6 +2377,98 @@ h2::after {
   background-color: #d62828;
 }
 
+/* FAQ Section Styles */
+.faq-section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.faq-section h1 {
+  font-size: 3.5rem;
+  color: #333;
+  font-weight: 700; /* or use 'bold' */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.faq-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #fff5f5;
+}
+
+.faq-question h3 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  color: #ff4040;
+  font-weight: 700;
+}
+
+.faq-answer {
+  display: none;
+  padding: 20px;
+  background-color: #fffafa;
+  border-top: 1px solid #ffe6e6;
+}
+
+.faq-answer p {
+  font-size: 1.5rem;
+  color: #161616;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .customize-section {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+  }
+
+  .consultation-btn {
+      width: 100%;
+  }
+
+  .faq-question h3 {
+      font-size: 1.1rem;
+  }
+}
+
+
+/*End End FAQ's*/
 
 
 /* Footer */
@@ -2478,7 +2570,7 @@ h2::after {
 }
 
 .social-icons a:hover {
-  background-color: #ffffff;
+  background-color: #ea2727;
   color: #1A1A2E;
 }
 
@@ -2730,3 +2822,4 @@ h2::after {
     grid-template-columns: 1fr;
   }
 }
+

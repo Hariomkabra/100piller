@@ -586,6 +586,71 @@
 
   <!-- End Our Partners-->
 
+
+  <!--FAQ's-->
+
+  <section class="faq-section">
+    <h1>FAQ's</h1>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do you ensure the quality of materials used in construction?</h3>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>We use high-quality raw materials throughout our services in every field. As a renowned quality-centric organization, we procure materials from trusted, quality-driven suppliers. Each material is thoroughly checked at our quality inspection unit to ensure it meets our high standards, providing unique and reliable service to our esteemed clients.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What steps do you take before starting a construction project?</h3>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>We offer our services only after complete planning and designing of the project. This includes a detailed assessment of the site, understanding client requirements, and creating a comprehensive blueprint to ensure the project is executed smoothly and meets all expectations.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Can you handle both residential and commercial projects?</h3>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, we cater to both residential and commercial projects. Whether it's a home or a business space, we apply the same level of quality and attention to detail, ensuring the structure meets your specific needs and preferences.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do you manage project timelines and budgets?</h3>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>We prioritize meticulous planning to manage timelines and budgets effectively. After the initial design phase, we provide a clear timeline and cost estimate. Our team works diligently to adhere to these, keeping you informed at every step to avoid delays or unexpected costs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.nextElementSibling;
+            const toggle = item.querySelector('.faq-toggle');
+            const isOpen = answer.style.display === 'block';
+
+            document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+            document.querySelectorAll('.faq-toggle').forEach(tog => tog.textContent = '+');
+
+            if (!isOpen) {
+                answer.style.display = 'block';
+                toggle.textContent = '−';
+            }
+        });
+    });
+</script>
+
+
+<!--End FAQ's-->
     <!--footer section -->
     <footer class="footer">
       <div class="footercontainer">
