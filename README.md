@@ -61,6 +61,7 @@ open index.html
 Alternatively, you can right-click the index.html file and select "Open with" followed by your browser choice.
 
 ## 📁 Project Structure
+
 plaintext
 Copy
 Edit
