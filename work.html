@@ -3,44 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 Pillars - Creative Design Agency</title>
+  <title>Living Walls - Creative Design Agency</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="containerr position-relative d-flex align-items-center justify-content-between">
-
       <div class="logo">
         <a href="index.html">
           <img class="logo-img" src="img/logo-removebg.png" alt="Brick & Bolt Home Construction Logo" />
         </a>
       </div>
-
-
       <nav class="nav">
         <ul class="nav__list">
-
-          <a href="work.html" style="font-style: italic; font-weight: 600;">Our Work</a>
+          <li><a href="work.html">Our Work</a></li>
           <li class="dropdown">
-            <a href="packages.html" style="font-style: italic; font-weight: 600;">Packages</a>
+            <a href="packages.html">Packages</a>
             <div class="dropdown-content">
-              <a href="#" style="font-style: italic; font-weight: 600;">Residential</a>
-         
-              <a href="#" style="font-style: italic; font-weight: 600;">Commercial</a>
+              <a href="#">Residential</a>
+              <a href="#">Commercial</a>
             </div>
           </li>
-          <li><a href="about.html" style="font-style: italic; font-weight: 600;">About Us</a></li>
-          <li><a href="contact.html" style="font-style: italic; font-weight: 600;">Contact</a></li>
-          <li><a href="GuideTips.html" style="font-style: italic; font-weight: 600;"> Guide & Tips </a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="GuideTips.html">Guide & Tips</a></li>
         </ul>
       </nav>
-      <a href="GetQuote.html" class="get-quote" style="font-style: italic; font-weight: 600;">Get Quote</a>
-
+      <a href="GetQuote.html" class="get-quote">Get Quote</a>
       <button class="menu-toggle">
         <span></span>
         <span></span>
@@ -71,7 +65,7 @@
 
   <!-- floating whats app -->
 
-  <main>
+<main>
     <section class="work">
       <div class="container">
         <h2 class="section-title">Our Work</h2>
@@ -149,11 +143,15 @@
       <!-- Modal for Project Details -->
       <div class="modal" id="project-modal">
         <div class="modal-content">
-          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <span class="close-btn" onclick="closeModal()">×</span>
           <div class="modal-body">
             <div class="modal-images">
               <img id="modal-image-1" src="" alt="Project Image 1">
               <img id="modal-image-2" src="" alt="Project Image 2">
+              <img id="modal-image-3" src="" alt="Project Image 3">
+              <img id="modal-image-4" src="" alt="Project Image 4">
+              <img id="modal-image-5" src="" alt="Project Image 5">
+              <img id="modal-image-6" src="" alt="Project Image 6">
             </div>
             <h3 id="modal-title"></h3>
             <p id="modal-category"></p>
@@ -180,7 +178,7 @@
           });
         });
       });
-    
+
       // Modal functionality
       const projects = {
         1: {
@@ -190,7 +188,11 @@
           features: ["3 Bedrooms", "Swimming Pool", "Landscaped Gardens"],
           images: [
             "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201902131653114271-78615e82856f11ea92bc0242ac110002.jpg",
+            "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201902131653114271-e16d4f6c856f11ea84160242ac110002.jpg",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/529281367.jpg?k=0e7b65d0db4cb22f440574da310fd1425017b6cfb510e69b0c8476eb7f557c07&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/529257498.jpg?k=c539f31beeebe50792fbcb378cb394ea7faa1b7d9dd6623c239d9d48a1bcee4f&o=&hp=1"
           ]
         },
         2: {
@@ -200,7 +202,11 @@
           features: ["2 Bedrooms", "Clubhouse", "Jogging Track"],
           images: [
             "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "https://images.pexels.com/photos/259751/pexels-photo-259751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://images.pexels.com/photos/259751/pexels-photo-259751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/87303511.jpg?k=401c2feaf1a1b1798d163cc16ee4e0cf4ae54dce271a43c7d4b2a9970a2482b1&o=&hp=1",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtafnIT7ZMxfp29w5FbulMjTIXlqhmnGpEqxXvoGIfktu1Bp8A1Kf1HBW6Ut9t1mF7fHI&usqp=CAU",
+            "https://cf.bstatic.com/xdata/images/hotel/max200/87303537.jpg?k=190f506dd7492168c9ba853edebeba67f49963ad596e2951e2a11a8e49365b54&o=&hp=1",
+            "https://palm-grove-resort-pattaya.nochi.com/data/Photos/OriginalPhoto/4149/414968/414968844/Palm-Grove-Resort-Pattaya-Na-Chom-Thian-Facilities.JPEG"
           ]
         },
         3: {
@@ -210,7 +216,11 @@
           features: ["3 Bedrooms", "Gymnasium", "Solar Panels"],
           images: [
             "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "https://images.pexels.com/photos/1571457/pexels-photo-1571457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://images.pexels.com/photos/1571457/pexels-photo-1571457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzDhNO6A7NqpO7-6SIFNz7hwSDzK0up2armQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY3msZcSDbI2hUdrtwnSF6F5rRNTNy5shhM_TZ69KKm6UHvpFQ6UtQqJ8txWsqS03mWNM&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30Bbmeynmg9RALcpQYNR6aTZI75vMM4Cnen2gYhWCBECjDsTn9z05fYNNyuCSkcGLndI&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe7rZjnczrXRB489AnvLpAJjigJW4biEXbbQwXsfq5cFA9cVUi7aFsjgsKD4g_oT4D3Xg&usqp=CAU"
           ]
         },
         4: {
@@ -220,7 +230,11 @@
           features: ["Large Warehouses", "Energy-Efficient Systems", "24/7 Security"],
           images: [
             "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "https://www.home-designing.com/wp-content/uploads/2021/07/industrial-living-room.jpg"
+            "https://www.home-designing.com/wp-content/uploads/2021/07/industrial-living-room.jpg",
+            "https://images.adsttc.com/media/images/632f/17ae/e423/5301/6ed2/d554/newsletter/not-ready-techstorm-headquarter-industrial-park-duts-design_11.jpg?1664030718",
+            "https://images.adsttc.com/media/images/632f/17af/e423/5301/6ed2/d556/large_jpg/not-ready-techstorm-headquarter-industrial-park-duts-design_9.jpg?1664030683",
+            "https://images.adsttc.com/media/images/632f/17ac/422f/0753/3de2/3fef/medium_jpg/not-ready-techstorm-headquarter-industrial-park-duts-design_17.jpg?1664030664",
+            "https://static.designboom.com/wp-content/uploads/2021/03/duts-design-floating-office-renovation-project-shanghai-designboom-700-250x200-22b08q85r448.jpg"
           ]
         },
         5: {
@@ -230,7 +244,11 @@
           features: ["2 Bedrooms", "Community Hall", "Play Area"],
           images: [
             "https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://images.nobroker.in/images/ff8081816d6e0056016d6e8542283249/ff8081816d6e0056016d6e8542283249_44720_698530_large.jpg",
+            "https://www.prathviresidency.com/images/m1.jpg",
+            "https://www.prathviresidency.com/images/m3.jpg",
+            "https://www.prathviresidency.com/images/b4.jpg",
+            "https://www.prathviresidency.com/images/b3.jpg"
           ]
         },
         6: {
@@ -240,18 +258,26 @@
           features: ["3 Bedrooms", "Infinity Pool", "Concierge Services"],
           images: [
             "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_1200/s3/2/94336/eb6751e4-cb3f-4f97-94ad-ccad31b75002.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadl01RYFCN2RTWM-uPSQF_mUyMLDZPme08cj8UcCkXrliy94GDRvYZ42xb6c11LQ-AMM&usqp=CAU",
+            "https://photos.zillowstatic.com/fp/db530549226b5e7ae4f6f0bd95509922-p_i.jpg",
+            "https://photos.zillowstatic.com/fp/077df24c0fea5299aad22550e5a91d87-p_i.jpg"
           ]
         }
       };
-    
+
       function openModal(projectId) {
         const project = projects[projectId];
         document.getElementById('modal-title').textContent = project.title;
         document.getElementById('modal-category').textContent = project.category;
         document.getElementById('modal-description').textContent = project.description;
-        document.getElementById('modal-image-1').src = project.images[0];
-        document.getElementById('modal-image-2').src = project.images[1];
+        document.getElementById('modal-image-1').src = project.images[0] || '';
+        document.getElementById('modal-image-2').src = project.images[1] || '';
+        document.getElementById('modal-image-3').src = project.images[2] || '';
+        document.getElementById('modal-image-4').src = project.images[3] || '';
+        document.getElementById('modal-image-5').src = project.images[4] || '';
+        document.getElementById('modal-image-6').src = project.images[5] || '';
         const featuresList = document.getElementById('modal-features');
         featuresList.innerHTML = '';
         project.features.forEach(feature => {
@@ -261,11 +287,11 @@
         });
         document.getElementById('project-modal').style.display = 'block';
       }
-    
+
       function closeModal() {
         document.getElementById('project-modal').style.display = 'none';
       }
-    
+
       window.onclick = function(event) {
         const modal = document.getElementById('project-modal');
         if (event.target === modal) {
@@ -275,9 +301,7 @@
     </script>
   </main>
 
-
-  <!--Future Homes – Smart & Leisure-->
-
+  <!-- Future Homes – Smart & Leisure -->
   <section class="future-homes">
     <h2>Future Homes – Smart & Leisure</h2>
     <p class="description">
@@ -299,9 +323,6 @@
       </div>
     </div>
   </section>
-
-  <!-- End Future Homes – Smart & Leisure-->
-
 
   <!-- Footer-->
 
@@ -561,8 +582,5 @@
     </script>
 </body>
 </html>
-
-
-
 
 
