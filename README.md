@@ -35,7 +35,6 @@ style.css: Main stylesheet (initial commit was 2 months ago)
 ## Technical Details
 Last Updated: Most files were updated last month
 
-Total Commits: 63 commits in the repository
 
 ## Technologies Used:
 
